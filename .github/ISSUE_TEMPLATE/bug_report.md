@@ -19,6 +19,6 @@ assignees: ''
 #### Steps to reproduce:
 ...
 
-#### Is this a crash?, please includ it here: (Recommended to use [Gist](https://gist.github.com/))
+#### Is this a crash?, please include it here: (Recommended to use [Gist](https://gist.github.com/))
 
 ...
