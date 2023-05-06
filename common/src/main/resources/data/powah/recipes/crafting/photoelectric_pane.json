@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"dld",
+	"lpl",
+	"dld"
+  ],
+  "key": {
+	"p": {
+	  "tag": "c:glass_panes"
+	},
+	"l": {
+	  "item": "minecraft:lapis_lazuli"
+	},
+	"d": {
+	  "item": "powah:dielectric_paste"
+	}
+  },
+  "result": {
+	"item": "powah:photoelectric_pane"
+  }
+}

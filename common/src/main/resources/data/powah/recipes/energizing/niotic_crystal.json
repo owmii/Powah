@@ -1,0 +1,10 @@
+{
+  "type": "powah:energizing",
+  "ingredients": [
+	{"item": "minecraft:diamond"}
+  ],
+  "energy": 300000,
+  "result": {
+	"item": "powah:crystal_niotic"
+  }
+}

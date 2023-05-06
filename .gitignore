@@ -27,3 +27,7 @@ jars
 
 # Files from Forge MDK
 forge*changelog.txt
+
+extra-mods-*
+
+.cache

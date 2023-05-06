@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+	"item": "powah:uraninite_raw"
+  },
+  "result": "powah:uraninite",
+  "experience": 0.7,
+  "cookingtime": 200
+}
