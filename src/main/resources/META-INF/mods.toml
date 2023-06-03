@@ -1,16 +1,16 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-issueTrackerURL="https://github.com/owmii/powah/issues"
+issueTrackerURL="https://github.com/Hellish-Mods/Hellish-Powah/"
 license="LGPLv3"
 
 [[mods]]
 modId="powah"
 version="${file.jarVersion}"
-displayName="Powah"
+displayName="Hellish Powah"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/powah"
-authors="owmii"
+authors="owmii, Rainbuu"
 description='''
-Various ways to generate, store and transmit FE power.
+A fork of the mod Powah to add more customizability for Modern Modpacks.
 '''
 
 [[dependencies.powah]]
