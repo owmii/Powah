@@ -248,7 +248,7 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
         boolean flag = false;
         if (this.redstone.isEmpty()) {
             ItemStack stack = this.inv.getStackInSlot(3);
-            if (stack.getItem() == Items.REDSTONE) {
+            if (stack.is("minecraft:redstone")) {
                 this.redstone.setAll(18);
             } else if (stack.getItem() == Items.REDSTONE_BLOCK) {
                 this.redstone.setAll(162);

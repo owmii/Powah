@@ -22,7 +22,7 @@ public class Builder {
     private List<BlockPos> queue = new ArrayList<>();
     public boolean built;
 
-    private int delay = 5;
+    private int delay = 2;
 
     public Builder(ReactorTile reactor) {
         this.reactor = reactor;
