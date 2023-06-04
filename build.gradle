@@ -5,24 +5,50 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '4.1.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'idea'
 
-final def lib = project(':_Lollipop')
-
-version = lib.minecraft_version + '-' + mod_version
-group = lib.mod_group
-archivesBaseName = mod_name
+version = new Date().format('dd-MM-yyyy-HH-mm-ss')
+group = 'owmii.powah'
+archivesBaseName = 'powah'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
 minecraft {
-    mappings channel: lib.mappings_channel, version: lib.mappings_version
-    accessTransformer = file('../Lollipop/src/main/resources/META-INF/accesstransformer.cfg')
+    mappings channel: 'snapshot', version: '20201028-1.16.3'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                powah {
+                    source sourceSets.main
+                }
+            }
+        }
+        server {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                powah {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 }
 
 sourceSets.main.resources { srcDirs = ["src/main/resources", "src/generated/resources"] }
@@ -33,29 +59,38 @@ tasks.withType(Jar) {
 }
 
 repositories {
-    maven { url = "http://dvs1.progwml6.com/files/maven" } //JEI
+    maven { url = "https://dvs1.progwml6.com/files/maven" } //JEI
     maven { url = "https://maven.theillusivec4.top" } //Curios
+    maven {
+        name "cursemaven"
+        url "https://cursemaven.com"
+    }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:' + lib.minecraft_version + '-' + lib.forge_version
-    compileOnly fg.deobf("mezz.jei:jei-${lib.jei_version}:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-${lib.jei_version}")
-    compile fg.deobf("top.theillusivec4.curios:curios-forge:${lib.curios_version}")
-    compile lib
+    minecraft 'net.minecraftforge:forge:1.16.5-36.2.34'
+
+    compileOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.153:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.153")
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.5.3")
+    implementation fg.deobf("curse.maven:lollipop-347954:3232534")
 }
+
+tasks.withType(Copy).all { duplicatesStrategy 'exclude' }
 
 jar {
     manifest {
         attributes([
                 'FMLAT'                   : 'accesstransformer.cfg',
                 "Specification-Title"     : mod_name,
-                "Specification-Vendor"    : lib.mod_group,
+                "Specification-Vendor"    : "owmii",
                 "Specification-Version"   : mod_version,
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : mod_version,
-                "Implementation-Vendor"   : lib.mod_group,
+                "Implementation-Vendor"   : "owmii",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ],)
     }
+
+    finalizedBy 'reobfJar'
 }
