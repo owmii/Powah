@@ -58,7 +58,7 @@ public class Builder {
                         part.setCorePos(this.reactor.getPos());
                         world.playEvent(2001, pos, Block.getStateId(this.reactor.getBlockState()));
                         itr.remove();
-                        this.delay = 5;
+                        this.delay = 2;
                         return false;
                     }
                 }

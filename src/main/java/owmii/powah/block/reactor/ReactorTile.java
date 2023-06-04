@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,6 +22,7 @@ import owmii.lib.block.ITankHolder;
 import owmii.lib.logistics.energy.Energy;
 import owmii.lib.logistics.fluid.Tank;
 import owmii.lib.util.Ticker;
+import owmii.powah.Powah;
 import owmii.powah.api.PowahAPI;
 import owmii.powah.block.Tier;
 import owmii.powah.block.Tiles;
@@ -248,9 +250,9 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
         boolean flag = false;
         if (this.redstone.isEmpty()) {
             ItemStack stack = this.inv.getStackInSlot(3);
-            if (stack.getItem() == Items.REDSTONE) {
+            if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer_fuel_block"))) {
                 this.redstone.setAll(18);
-            } else if (stack.getItem() == Items.REDSTONE_BLOCK) {
+            } else if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer_fuel_block"))) {
                 this.redstone.setAll(162);
             }
             this.redstoneTemp = 120;

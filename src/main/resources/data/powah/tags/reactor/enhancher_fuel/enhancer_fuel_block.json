@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:redstone"
+  "minecraft:redstone_block"
   ]
 }
