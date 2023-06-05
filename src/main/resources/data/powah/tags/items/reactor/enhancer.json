@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+    "#powah:reactor/enhancer_fuel",
+    "#powah:reactor/enhancer_fuel_block"
+    ]
+  }

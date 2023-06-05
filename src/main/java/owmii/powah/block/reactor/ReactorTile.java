@@ -250,7 +250,7 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
         boolean flag = false;
         if (this.redstone.isEmpty()) {
             ItemStack stack = this.inv.getStackInSlot(3);
-            if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer_fuel_block"))) {
+            if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer_fuel"))) {
                 this.redstone.setAll(18);
             } else if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer_fuel_block"))) {
                 this.redstone.setAll(162);
@@ -263,9 +263,9 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
             if (generating) {
                 if (this.ticks % 40 == 0) {
                     this.redstone.back();
-                    if (this.redstone.isEmpty()) {
-                        this.redstone.setMax(0);
-                    }
+                    // if (this.redstone.isEmpty()) {
+                    //     this.redstone.setMax(0);
+                    // }
                     flag = true;
                 }
             }
@@ -303,7 +303,7 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
         boolean flag = false;
         if (this.fuel.getTicks() <= 900) {
             ItemStack stack = this.inv.getStackInSlot(1);
-            if (stack.getItem() == Itms.URANINITE) {
+            if (stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/radioactive_fuel"))) {
                 this.fuel.add(100);
                 this.baseTemp = 700;
                 stack.shrink(1);
@@ -344,11 +344,11 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
     @Override
     public boolean canInsert(int slot, ItemStack stack) {
         if (slot == 1) {
-            return stack.getItem() == Itms.URANINITE;
+            return stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/radioactive_fuel"));
         } else if (slot == 2) {
             return ForgeHooks.getBurnTime(stack) > 0 && !stack.hasContainerItem();
         } else if (slot == 3) {
-            return stack.getItem() == Items.REDSTONE || stack.getItem() == Items.REDSTONE_BLOCK;
+            return stack.getItem().getTags().contains(new ResourceLocation(Powah.MOD_ID, "reactor/enhancer"));
         } else if (slot == 4) {
             Pair<Integer, Integer> coolant = PowahAPI.getSolidCoolant(stack.getItem());
             return coolant.getLeft() > 0 && coolant.getRight() < 2;
