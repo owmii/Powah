@@ -8,7 +8,7 @@ issueTrackerURL="https://github.com/Hellish-Mods/Hellish-Powah/issues"
 modId="powah"
 version="${file.jarVersion}"
 
-displayName="Hellish Powah"
+displayName="Powah: Overcharged"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/powah"
 authors="Hellish Mods & Modern Modpacks"
 credits="""
@@ -32,11 +32,17 @@ description="A fork of the mod Powah to add more customizability for Modern Modp
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.powah]]
     modId="lollipop"
     mandatory=true
 
     versionRange="[3.2.9,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.powah]]
+    modId="patchouli"
+    mandatory=false
+
+    versionRange="[1.16.4-53.2)"
     ordering="NONE"
     side="BOTH"
