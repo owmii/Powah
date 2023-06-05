@@ -2,7 +2,6 @@ package owmii.powah.client.screen;
 
 import net.minecraft.client.gui.ScreenManager;
 import owmii.lib.client.screen.wiki.WikiScreen;
-import owmii.powah.client.book.PowahBook;
 import owmii.powah.client.screen.container.*;
 import owmii.powah.inventory.Containers;
 
@@ -19,9 +18,5 @@ public class Screens {
         ScreenManager.registerFactory(Containers.SOLAR, SolarScreen::new);
         ScreenManager.registerFactory(Containers.THERMO, ThermoScreen::new);
         ScreenManager.registerFactory(Containers.DISCHARGER, DischargerScreen::new);
-    }
-
-    public static void openManualScreen() {
-        WikiScreen.open(PowahBook.WIKI.getCategories().get(0));
     }
 }

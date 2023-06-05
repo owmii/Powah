@@ -1,0 +1,12 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "powah:dielectric_paste"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "book": "energized_tome"
+}
