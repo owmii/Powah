@@ -1,0 +1,34 @@
+{
+  "name": "Solar Panel",
+  "icon": "powah:solar_panel_nitro",
+  "category": "powah:generators",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/solar_panel_book.png"
+      ],
+      "title": "Solar Panel",
+      "text": "The Solar Panel is a clean way to get power."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/solar_panel_starter",
+      "recipe2": "powah:crafting/solar_panel_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/solar_panel_hardened",
+      "recipe2": "powah:crafting/solar_panel_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/solar_panel_niotic",
+      "recipe2": "powah:crafting/solar_panel_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/solar_panel_nitro"
+    }
+  ]
+}

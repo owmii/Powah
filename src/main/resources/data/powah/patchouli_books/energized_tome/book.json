@@ -2,7 +2,7 @@
     "name": "Energized Tome",
     "landing_text": "The official Powah: Overcharged guide book. This should contain all of the information you need. If it doesn't, complain on Github.",
     "version": 0,
-    "subtitle": "§dBook of Power",
+    "subtitle": "§eBook of Power",
     "show_progress": false,
     "creative_tab": "powah",
     "use_blocky_font": true,

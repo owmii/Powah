@@ -1,0 +1,38 @@
+{
+  "name": "Reactor",
+  "icon": "powah:reactor_nitro",
+  "category": "powah:generators",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Reactor",
+      "text": "Reactors is the end-game source of power generation. When fed uraninite, it spits out power. There are ways you can add more production. This includes adding coolant, redstone, and carbon (furnace fuels). You need 36 reactor blocks to build it, and it autobuilds when you place the first block."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/reactor_book.png"
+      ],
+      "text": "To modpackers: Uraninite and redstone can be replaced with tags :)"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/reactor_starter",
+      "recipe2": "powah:crafting/reactor_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/reactor_hardened",
+      "recipe2": "powah:crafting/reactor_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/reactor_niotic",
+      "recipe2": "powah:crafting/reactor_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/reactor_nitro"
+    }
+  ]
+}
