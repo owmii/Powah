@@ -1,0 +1,34 @@
+{
+  "name": "Energy Cells",
+  "icon": "powah:energy_cell_nitro",
+  "category": "powah:energy",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/energy_cell_book.png"
+      ],
+      "title": "Energy Cells",
+      "text": "Energy cells store power."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cell_starter",
+      "recipe2": "powah:crafting/energy_cell_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cell_hardened",
+      "recipe2": "powah:crafting/energy_cell_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cell_niotic",
+      "recipe2": "powah:crafting/energy_cell_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cell_nitro"
+    }
+  ]
+}

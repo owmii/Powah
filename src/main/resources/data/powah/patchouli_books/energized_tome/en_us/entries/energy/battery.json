@@ -1,0 +1,34 @@
+{
+  "name": "Batteries",
+  "icon": "powah:battery_nitro",
+  "category": "powah:energy",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/item/battery_nitro.png"
+      ],
+      "title": "Battery",
+      "text": "Batteries store power portably. As a Curio, you can use it to charge items in your inventory."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/battery_starter",
+      "recipe2": "powah:crafting/battery_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/battery_hardened",
+      "recipe2": "powah:crafting/battery_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/battery_niotic",
+      "recipe2": "powah:crafting/battery_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/battery_nitro"
+    }
+  ]
+}

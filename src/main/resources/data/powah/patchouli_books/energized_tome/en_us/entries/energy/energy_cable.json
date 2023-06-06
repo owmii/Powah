@@ -1,0 +1,34 @@
+{
+  "name": "Energy Cables",
+  "icon": "powah:energy_cable_nitro",
+  "category": "powah:energy",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/energy_cable_book.png"
+      ],
+      "title": "Energy Cables",
+      "text": "Energy cables transport power non-wirelessly."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cable_starter",
+      "recipe2": "powah:crafting/energy_cable_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cable_hardened",
+      "recipe2": "powah:crafting/energy_cable_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cable_niotic",
+      "recipe2": "powah:crafting/energy_cable_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energy_cable_nitro"
+    }
+  ]
+}

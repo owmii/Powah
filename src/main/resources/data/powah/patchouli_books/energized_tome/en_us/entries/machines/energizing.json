@@ -1,0 +1,39 @@
+{
+  "name": "Energizing",
+  "icon": "powah:energizing_orb",
+  "category": "powah:machines",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Energizing",
+      "text": "Energizing is the act of putting energy into one or more items. The way you can do this is putting energy into an Energizing Orb with Energizing Rods. Each tier of Energizing Rod can energize faster, so it is worth to upgrade."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/energizing_book.png"
+      ],
+      "text": "Energizing Rods can be linked to orbs with the Powah Wrench."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energizing_orb",
+      "recipe2": "powah:crafting/energizing_rod_starter"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energizing_rod_basic",
+      "recipe2": "powah:crafting/energizing_rod_hardened"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energizing_rod_blazing",
+      "recipe2": "powah:crafting/energizing_rod_niotic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energizing_rod_spirited",
+      "recipe2": "powah:crafting/energizing_rod_nitro"
+    }
+  ]
+}

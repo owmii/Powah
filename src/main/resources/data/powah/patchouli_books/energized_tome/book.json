@@ -1,13 +1,13 @@
 {
     "name": "Energized Tome",
-    "landing_text": "The official Powah: Overcharged guide book. This should contain all of the information you need. If it doesn't, complain on Github.",
+    "landing_text": "The official Powah: Overcharged guide book. This guidebook will tell you how to generate, transport, and use power.",
     "version": 0,
     "subtitle": "§eBook of Power",
     "show_progress": false,
     "creative_tab": "powah",
     "use_blocky_font": true,
-    "nameplate_color": "D8BFD8",
-    "book_texture": "patchouli:textures/gui/book_purple.png",
+    "nameplate_color": "BF40BF",
+    "book_texture": "powah:textures/patchouli/book.png",
     "show_toasts": false,
-    "model": "powah:textures/item/energized_tome.png"
+    "model": "powah:energized_tome"
 }
