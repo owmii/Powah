@@ -1,4 +1,25 @@
-# Powah: Overcharged
- A tech mod that has Various ways to generate, store and transmit Forge Energy. Maintained for 1.16 by the Hellish Mods team.
+Powah: Overcharged
 
-<a href="https://www.curseforge.com/minecraft/mc-mods/powah" target="_blank"><img src="http://cf.way2muchnoise.eu/all_352656_downloads.svg" />  </a><a href="https://www.curseforge.com/minecraft/mc-mods/powah" target="_blank"><img src="http://cf.way2muchnoise.eu/versions/352656.svg" />  </a><a href="https://discord.gg/A8TP9JY" target="_blank"><img src="https://img.shields.io/discord/461794532422582282.svg" /></a>
+Description
+
+Powah: Overcharged is a maintained fork of Powah for 1.16. We created this because there were some features lacking from the original Powah that we didn't like. So, we forked it and started working.
+
+Features
+
+    Energy Production
+    Energy Transportation
+    QOL for pack-makers
+    Intensive Guidebook
+    and more!
+
+Dependencies
+Forge 36.0.0+
+Lollipop 3.2.9
+Patchouli 53.2 (Optional but recommended)
+
+ 
+Go support the original Powah!
+
+ 
+
+
