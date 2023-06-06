@@ -1,0 +1,38 @@
+{
+  "name": "Thermo Generator",
+  "icon": "powah:thermo_generator_nitro",
+  "category": "powah:generators",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Thermo Generator",
+      "text": "The Thermo Generator uses a heat source and a coolant to produce energy. The heat source goes on the bottom face of the generator, and the coolant goes in the generator. Some heat sources are lava, magma blocks, and blazing crystal blocks."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "powah:textures/patchouli/thermo_generator_book.png"
+      ],
+      "text": "§oYes, the background §ois the same as the §omagmator one. Don't §oworry about it."
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/thermo_generator_starter",
+      "recipe2": "powah:crafting/thermo_generator_basic"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/thermo_generator_hardened",
+      "recipe2": "powah:crafting/thermo_generator_blazing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/thermo_generator_niotic",
+      "recipe2": "powah:crafting/thermo_generator_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/thermo_generator_nitro"
+    }
+  ]
+}

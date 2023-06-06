@@ -6,7 +6,7 @@
     {
       "type": "patchouli:image",
       "images": [
-        "powah:textures/patchouli/furnator_book.png"
+        "powah:textures/patchouli/magmator_book.png"
       ],
       "title": "Magmator",
       "text": "The Magmator uses lava to produce energy."
