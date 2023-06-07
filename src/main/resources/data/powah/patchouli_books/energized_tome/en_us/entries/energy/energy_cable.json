@@ -13,22 +13,22 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/energy_cable_starter",
-      "recipe2": "powah:crafting/energy_cable_basic"
+      "recipe": "powah:crafting/cable_starter",
+      "recipe2": "powah:crafting/cable_basic"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/energy_cable_hardened",
-      "recipe2": "powah:crafting/energy_cable_blazing"
+      "recipe": "powah:crafting/cable_hardened",
+      "recipe2": "powah:crafting/cable_blazing"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/energy_cable_niotic",
-      "recipe2": "powah:crafting/energy_cable_spirited"
+      "recipe": "powah:crafting/cable_niotic",
+      "recipe2": "powah:crafting/cable_spirited"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/energy_cable_nitro"
+      "recipe": "powah:crafting/cable_nitro"
     }
   ]
 }

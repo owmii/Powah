@@ -9,7 +9,7 @@
         "powah:textures/item/battery_nitro.png"
       ],
       "title": "Battery",
-      "text": "Batteries store power portably. As a Curio, you can use it to charge items in your inventory."
+      "text": "Batteries store power portably. As a Curio, it charges items."
     },
     {
       "type": "crafting",
