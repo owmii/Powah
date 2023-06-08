@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	"ghg",
-	"cdc",
+	"hch",
 	"ghg"
   ],
   "key": {
@@ -14,9 +14,6 @@
 	},
 	"g": {
 	  "item": "powah:steel_energized"
-	},
-	"d": {
-	  "item": "powah:dielectric_casing"
 	}
   },
   "result": {

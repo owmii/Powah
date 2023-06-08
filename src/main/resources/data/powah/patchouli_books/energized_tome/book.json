@@ -7,7 +7,6 @@
     "creative_tab": "powah",
     "use_blocky_font": true,
     "nameplate_color": "BF40BF",
-    "book_texture": "powah:textures/patchouli/book.png",
     "show_toasts": false,
     "model": "powah:energized_tome"
 }

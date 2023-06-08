@@ -6,7 +6,7 @@
     {
       "type": "patchouli:image",
       "images": [
-        "powah:textures/item/battery_nitro.png"
+        "powah:textures/patchouli/battery_book.png"
       ],
       "title": "Battery",
       "text": "Batteries store power portably. As a Curio, it charges items."

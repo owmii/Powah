@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	"bnb",
-	"cdc",
+	"ncn",
 	"bnb"
   ],
   "key": {
@@ -14,9 +14,6 @@
 	},
 	"b": {
 	  "item": "powah:crystal_spirited"
-	},
-	"d": {
-	  "item": "powah:dielectric_casing"
 	}
   },
   "result": {

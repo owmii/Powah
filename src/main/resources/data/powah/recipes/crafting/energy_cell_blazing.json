@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	"bgb",
-	"cdc",
+	"gcg",
 	"bgb"
   ],
   "key": {
@@ -14,9 +14,6 @@
 	},
 	"b": {
 	  "item": "powah:crystal_blazing"
-	},
-	"d": {
-	  "item": "powah:dielectric_casing"
 	}
   },
   "result": {
