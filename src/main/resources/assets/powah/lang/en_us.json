@@ -177,5 +177,10 @@
   "chat.powah.no.binding": "This Card is already bound to %s!",
   "chat.powah.wrench.link.start": "Started linking ...",
   "chat.powah.wrench.link.done": "Linking done!",
-  "chat.powah.wrench.link.fail": "Out of range!!"
+  "chat.powah.wrench.link.fail": "Out of range!!",
+
+  "item.powah.energized_steel_helmet": "Energized Steel Helmet",
+  "item.powah.energized_steel_chestplate": "Energized Steel Chestplate",
+  "item.powah.energized_steel_leggings": "Energized Steel Leggings",
+  "item.powah.energized_steel_boots": "Energized Steel Boots"
 }

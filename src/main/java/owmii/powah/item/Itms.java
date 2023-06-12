@@ -1,10 +1,13 @@
 package owmii.powah.item;
 
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import owmii.lib.item.ItemBase;
 import owmii.lib.registry.Registry;
 import owmii.lib.registry.VarReg;
 import owmii.powah.Powah;
+import owmii.powah.armor.ModArmorMaterial;
 import owmii.powah.block.Blcks;
 import owmii.powah.block.Tier;
 
@@ -43,4 +46,8 @@ public class Itms {
     public static final Item URANINITE_RAW = REG.register("uraninite_raw", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item URANINITE_RAW_DENSE = REG.register("uraninite_raw_dense", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item URANINITE = REG.register("uraninite", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_STEEL_BOOTS = REG.register("energized_steel_boots", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_STEEL_LEGGINGS = REG.register("energized_steel_leggings", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_STEEL_CHESTPLATE = REG.register("energized_steel_chestplate", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_STEEL_HELMET = REG.register("energized_steel_helmet", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
 }
