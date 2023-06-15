@@ -179,6 +179,7 @@
   "chat.powah.wrench.link.done": "Linking done!",
   "chat.powah.wrench.link.fail": "Out of range!!",
 
+  "tooltip.powah.armor_lightning_immunity": "Grants lightning bolt damange immunity when a full set of Powah armor is worn.",
   "item.powah.energized_steel_helmet": "Energized Steel Helmet",
   "item.powah.energized_steel_chestplate": "Energized Steel Chestplate",
   "item.powah.energized_steel_leggings": "Energized Steel Leggings",
