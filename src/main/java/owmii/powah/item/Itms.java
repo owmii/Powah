@@ -15,14 +15,9 @@ public class Itms {
     public static final Registry<Item> REG = new Registry<>(Item.class, Blcks.REG.getBlockItems(ItemGroups.MAIN), Powah.MOD_ID);
     public static final Item WRENCH = REG.register("wrench", new WrenchItem(new Item.Properties().group(ItemGroups.MAIN).maxStackSize(1)));
     public static final Item CAPACITOR_BASIC_TINY = REG.register("capacitor_basic_tiny", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_BASIC = REG.register("capacitor_basic", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item CAPACITOR_BASIC_LARGE = REG.register("capacitor_basic_large", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_HARDENED = REG.register("capacitor_hardened", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_BLAZING = REG.register("capacitor_blazing", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_NIOTIC = REG.register("capacitor_niotic", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_SPIRITED = REG.register("capacitor_spirited", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item CAPACITOR_NITRO = REG.register("capacitor_nitro", new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final VarReg<Tier, Item> BATTERY = REG.getVar("battery", variant -> new BatteryItem(new Item.Properties().group(ItemGroups.MAIN).maxStackSize(1), variant), Tier.getNormalVariants());
+    public static final VarReg<Tier, Item> CAPACITOR = REG.getVar("capacitor", variant -> new CapacitorItem(new Item.Properties().group(ItemGroups.MAIN), variant), Tier.getVariantsWithoutStarter());
+    public static final VarReg<Tier, Item> BATTERY = REG.getVar("battery", variant -> new BatteryItem(new Item.Properties().group(ItemGroups.MAIN).maxStackSize(1), variant), Tier.values());
     public static final Item AERIAL_PEARL = REG.register("aerial_pearl", new AerialPearlItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item PLAYER_AERIAL_PEARL = REG.register("player_aerial_pearl", new AerialPearlItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item BLANK_CARD = REG.register("blank_card", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
