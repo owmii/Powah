@@ -17,8 +17,10 @@ import owmii.powah.config.Configs;
 import owmii.powah.config.item.BatteryConfig;
 
 public class BatteryItem extends EnergyItem<Tier, BatteryConfig, BatteryItem> implements IEnderExtender {
+    boolean hasGlint = false;
     public BatteryItem(Item.Properties properties, Tier variant) {
         super(properties, variant);
+        if (variant==Tier.CREATIVE) hasGlint = true;
     }
 
     @Override
@@ -61,7 +63,7 @@ public class BatteryItem extends EnergyItem<Tier, BatteryConfig, BatteryItem> im
 
     @Override
     public boolean hasEffect(ItemStack stack) {
-        return isCharging(stack);
+        return isCharging(stack) || hasGlint;
     }
 
     private void switchCharging(ItemStack stack) {
