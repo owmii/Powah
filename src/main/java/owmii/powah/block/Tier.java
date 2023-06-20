@@ -9,7 +9,8 @@ public enum Tier implements IVariant<Tier> {
     BLAZING(0xE4B040),
     NIOTIC(0x13EED2),
     SPIRITED(0xAFE241),
-    NITRO(0xD7746C),
+    NITRO(0xD7746C),   
+    OVERCHARGED(0xE500DC),
     CREATIVE(0x8D29AD);
 
     private final int color;
@@ -24,7 +25,7 @@ public enum Tier implements IVariant<Tier> {
     }
 
     public static Tier[] getNormalVariants() {
-        return new Tier[]{STARTER, BASIC, HARDENED, BLAZING, NIOTIC, SPIRITED, NITRO};
+        return new Tier[]{STARTER, BASIC, HARDENED, BLAZING, NIOTIC, SPIRITED, NITRO, OVERCHARGED};
     }
 
     public int getColor() {
