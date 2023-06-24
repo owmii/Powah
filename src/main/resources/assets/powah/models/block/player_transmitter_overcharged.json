@@ -1,0 +1,7 @@
+{
+  "parent": "powah:block/player_transmitter",
+  "textures": {
+	"var": "powah:block/player_transmitter_overcharged_var",
+	"core": "powah:block/player_transmitter_core"
+  }
+}

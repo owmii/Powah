@@ -19,6 +19,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
     public final ForgeConfigSpec.LongValue nioticCap;
     public final ForgeConfigSpec.LongValue spiritedCap;
     public final ForgeConfigSpec.LongValue nitroCap;
+    public final ForgeConfigSpec.LongValue overchargedCap;
 
     public final ForgeConfigSpec.LongValue starterTransfer;
     public final ForgeConfigSpec.LongValue basicTransfer;
@@ -27,6 +28,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
     public final ForgeConfigSpec.LongValue nioticTransfer;
     public final ForgeConfigSpec.LongValue spiritedTransfer;
     public final ForgeConfigSpec.LongValue nitroTransfer;
+    public final ForgeConfigSpec.LongValue overchargedTransfer;
 
     public EnergyConfig(ForgeConfigSpec.Builder builder, long[] caps, long[] trs) {
         builder.push("Energy_Capacity");
@@ -37,6 +39,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.nioticCap = builder.defineInRange("nioticCap", caps[4], Energy.MIN, Energy.MAX);
         this.spiritedCap = builder.defineInRange("spiritedCap", caps[5], Energy.MIN, Energy.MAX);
         this.nitroCap = builder.defineInRange("nitroCap", caps[6], Energy.MIN, Energy.MAX);
+        this.overchargedCap = builder.defineInRange("overchargedCap", caps[6], Energy.MIN, Energy.MAX);
         builder.pop();
 
         builder.push("Energy_Transfer");
@@ -47,6 +50,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.nioticTransfer = builder.defineInRange("nioticTransfer", trs[4], Energy.MIN, Energy.MAX);
         this.spiritedTransfer = builder.defineInRange("spiritedTransfer", trs[5], Energy.MIN, Energy.MAX);
         this.nitroTransfer = builder.defineInRange("nitroTransfer", trs[6], Energy.MIN, Energy.MAX);
+        this.overchargedTransfer = builder.defineInRange("overchargedTransfer", trs[6], Energy.MIN, Energy.MAX);
         builder.pop();
     }
 
@@ -59,6 +63,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.capacities.put(Tier.NIOTIC, this.nioticCap.get());
         this.capacities.put(Tier.SPIRITED, this.spiritedCap.get());
         this.capacities.put(Tier.NITRO, this.nitroCap.get());
+        this.capacities.put(Tier.OVERCHARGED, this.overchargedCap.get());
         this.capacities.put(Tier.CREATIVE, Energy.MAX);
 
         this.transfer.put(Tier.STARTER, this.starterTransfer.get());
@@ -68,6 +73,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.transfer.put(Tier.NIOTIC, this.nioticTransfer.get());
         this.transfer.put(Tier.SPIRITED, this.spiritedTransfer.get());
         this.transfer.put(Tier.NITRO, this.nitroTransfer.get());
+        this.transfer.put(Tier.OVERCHARGED, this.overchargedTransfer.get());
         this.transfer.put(Tier.CREATIVE, Energy.MAX);
     }
 

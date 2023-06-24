@@ -1,0 +1,6 @@
+{
+  "variants": {
+	"top=false": {"model": "powah:block/player_transmitter_overcharged"},
+	"top=true": {"model": "powah:block/player_transmitter_overcharged_top"}
+  }
+}
