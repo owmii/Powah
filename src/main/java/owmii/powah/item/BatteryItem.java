@@ -1,11 +1,17 @@
 package owmii.powah.item;
 
+import java.util.List;
+
+import javax.annotation.Nullable;
+
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.energy.IEnergyStorage;
 import owmii.lib.config.IEnergyConfig;
@@ -18,9 +24,12 @@ import owmii.powah.config.item.BatteryConfig;
 
 public class BatteryItem extends EnergyItem<Tier, BatteryConfig, BatteryItem> implements IEnderExtender {
     boolean hasGlint = false;
+    boolean isCreative = false;
     public BatteryItem(Item.Properties properties, Tier variant) {
         super(properties, variant);
-        if (variant==Tier.CREATIVE) hasGlint = true;
+
+        isCreative = variant==Tier.CREATIVE;
+        if (isCreative) hasGlint = true;
     }
 
     @Override
@@ -30,13 +39,12 @@ public class BatteryItem extends EnergyItem<Tier, BatteryConfig, BatteryItem> im
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int itemSlot, boolean isSelected) {
-        if (entity instanceof PlayerEntity && isCharging(stack)) {
-            Energy.ifPresent(stack, storage -> {
-                if (storage instanceof Energy) {
-                    ((Energy) storage).chargeInventory((PlayerEntity) entity, stack1 -> !(stack1.getItem() instanceof BatteryItem));
-                }
-            });
-        }
+        Energy.ifPresent(stack, storage -> {
+            if (isCreative) Energy.receive(stack, Energy.MAX, false);
+
+            if (entity instanceof PlayerEntity && isCharging(stack) && storage instanceof Energy)
+                ((Energy)storage).chargeInventory((PlayerEntity) entity, stack1 -> !(stack1.getItem() instanceof BatteryItem));
+        });
     }
 
     @Override
@@ -50,9 +58,14 @@ public class BatteryItem extends EnergyItem<Tier, BatteryConfig, BatteryItem> im
     }
 
     @Override
+    public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+        if (!isCreative) super.addInformation(stack, worldIn, tooltip, flagIn);
+    }
+
+    @Override
     public boolean showDurabilityBar(ItemStack stack) {
         IEnergyStorage energy = Energy.get(stack).orElse(Energy.Item.create(0));
-        return energy.getEnergyStored() < energy.getMaxEnergyStored();
+        return !isCreative && energy.getEnergyStored() < energy.getMaxEnergyStored();
     }
 
     @Override
