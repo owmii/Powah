@@ -70,11 +70,6 @@ minecraft {
 
 sourceSets.main.resources { srcDirs = ["src/main/resources", "src/generated/resources"] }
 
-tasks.withType(Jar) {
-    def out = file("../_JARS")
-    destinationDir = out
-}
-
 repositories {
     maven { url = "https://dvs1.progwml6.com/files/maven" } //JEI
     maven { url = "https://maven.theillusivec4.top" } //Curios
@@ -107,7 +102,7 @@ jar {
                 "Specification-Vendor"    : "owmii",
                 "Specification-Version"   : mod_version,
                 "Implementation-Title"    : project.name,
-                "Implementation-Version"  : mod_version,
+                "Implementation-Version"  : "${version}",
                 "Implementation-Vendor"   : "owmii",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ],)
