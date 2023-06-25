@@ -20,8 +20,8 @@ public class PlayerTransmitterConfig extends EnergyConfig {
 
     public PlayerTransmitterConfig(ForgeConfigSpec.Builder builder) {
         super(builder,
-                new long[]{100_000L, 1000_000L, 3000_000L, 5_000_000L, 10_000_000L, 15_000_000L, 40_000_000L},
-                new long[]{500L, 2500L, 8000L, 20_000L, 50_000L, 100_000L, 400_000L}
+                new long[]{100_000L, 1000_000L, 3000_000L, 5_000_000L, 10_000_000L, 15_000_000L, 40_000_000L, 80_000_000L},
+                new long[]{500L, 2500L, 8000L, 20_000L, 50_000L, 100_000L, 400_000L, 800_000L}
         );
         builder.push("Charging_Speed");
         this.starterChargingSpeed = builder.defineInRange("starterChargingSpeed", 100, Energy.MIN, Energy.MAX);

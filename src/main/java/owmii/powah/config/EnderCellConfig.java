@@ -19,9 +19,9 @@ public class EnderCellConfig extends EnergyConfig {
 
     public EnderCellConfig(ForgeConfigSpec.Builder builder) {
         this(builder,
-                new long[]{0, 0, 0, 0, 0, 0, 0},
-                new long[]{200L, 2500L, 8000L, 20_000L, 50_000L, 100_000L, 400_000L},
-                new int[]{1, 2, 3, 5, 7, 9, 12}
+                new long[]{0, 0, 0, 0, 0, 0, 0, 0},
+                new long[]{200L, 2500L, 8000L, 20_000L, 50_000L, 100_000L, 400_000L, 800_000L},
+                new int[]{1, 2, 3, 5, 7, 9, 12, 15}
         );
     }
 
