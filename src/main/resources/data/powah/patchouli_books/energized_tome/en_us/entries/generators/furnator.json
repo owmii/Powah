@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/furnator_nitro"
+      "recipe": "powah:crafting/furnator_nitro",
+      "recipe2": "powah:crafting/furnator_overcharged"
     }
   ]
 }

@@ -34,6 +34,10 @@
       "type": "crafting",
       "recipe": "powah:crafting/energizing_rod_spirited",
       "recipe2": "powah:crafting/energizing_rod_nitro"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/energizing_rod_overcharged"
     }
   ]
 }

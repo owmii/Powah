@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/solar_panel_nitro"
+      "recipe": "powah:crafting/solar_panel_nitro",
+      "recipe2": "powah:crafting/solar_panel_overcharged"
     }
   ]
 }

@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/cable_nitro"
+      "recipe": "powah:crafting/cable_nitro",
+      "recipe2": "powah:crafting/cable_overcharged"
     }
   ]
 }

@@ -32,7 +32,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/reactor_nitro"
+      "recipe": "powah:crafting/reactor_nitro",
+      "recipe2": "powah:crafting/reactor_overcharged"
     }
   ]
 }

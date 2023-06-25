@@ -37,22 +37,27 @@
     {
       "type": "crafting",
       "recipe": "powah:crafting/ender_gate_nitro",
-      "recipe2": "powah:crafting/ender_cell_starter"
+      "recipe2": "powah:crafting/ender_gate_overcharged"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/ender_cell_basic",
-      "recipe2": "powah:crafting/ender_cell_hardened"
+      "recipe": "powah:crafting/ender_cell_starter",
+      "recipe2": "powah:crafting/ender_cell_basic"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/ender_cell_blazing",
-      "recipe2": "powah:crafting/ender_cell_niotic"
+      "recipe": "powah:crafting/ender_cell_hardened",
+      "recipe2": "powah:crafting/ender_cell_blazing"
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/ender_cell_spirited",
-      "recipe2": "powah:crafting/ender_cell_nitro"
+      "recipe": "powah:crafting/ender_cell_niotic",
+      "recipe2": "powah:crafting/ender_cell_spirited"
+    },
+    {
+      "type": "crafting",
+      "recipe": "powah:crafting/ender_cell_nitro",
+      "recipe2": "powah:crafting/ender_cell_overcharged"
     }
   ]
 }

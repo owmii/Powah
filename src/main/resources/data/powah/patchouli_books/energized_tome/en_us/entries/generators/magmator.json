@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/magmator_nitro"
+      "recipe": "powah:crafting/magmator_nitro",
+      "recipe2": "powah:crafting/magmator_overcharged"
     }
   ]
 }

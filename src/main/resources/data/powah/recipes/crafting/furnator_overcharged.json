@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"ggg",
+	"cdc",
+	"gfg"
+  ],
+  "key": {
+	"c": {
+	  "item": "powah:capacitor_overcharged"
+	},
+	"g": {
+	  "item": "powah:overcharged_core"
+	},
+	"f": {
+	  "item": "powah:furnator_nitro"
+	},
+	"d": {
+	  "item": "powah:dielectric_casing"
+	}
+  },
+  "result": {
+	"item": "powah:furnator_overcharged"
+  }
+}

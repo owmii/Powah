@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bnb",
+	"ncn",
+	"bnb"
+  ],
+  "key": {
+	"c": {
+	  "item": "powah:energy_cell_overcharged"
+	},
+	"n": {
+	  "item": "powah:capacitor_creative"
+	},
+	"b": {
+	  "item": "powah:dielectric_paste"
+	}
+  },
+  "result": {
+	"item": "powah:energy_cell_creative"
+  }
+}

@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/energy_cell_nitro"
+      "recipe": "powah:crafting/energy_cell_nitro",
+      "recipe2": "powah:crafting/energy_cell_overcharged"
     }
   ]
 }

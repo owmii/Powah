@@ -28,7 +28,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/battery_nitro"
+      "recipe": "powah:crafting/battery_nitro",
+      "recipe2": "powah:crafting/battery_overcharged"
     }
   ]
 }

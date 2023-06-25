@@ -32,7 +32,8 @@
     },
     {
       "type": "crafting",
-      "recipe": "powah:crafting/thermo_generator_nitro"
+      "recipe": "powah:crafting/thermo_generator_nitro",
+      "recipe2": "powah:crafting/thermo_generator_overcharged"
     }
   ]
 }

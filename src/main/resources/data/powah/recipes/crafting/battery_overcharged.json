@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"oko",
+	"iri",
+	"oco"
+  ],
+  "key": {
+	"r": {
+	  "item": "minecraft:redstone_block"
+	},
+	"c": {
+	  "item": "powah:battery_nitro"
+	},
+	"i": {
+	  "item": "powah:capacitor_overcharged"
+	},
+	"o": {
+	  "item": "powah:dielectric_paste"
+	},
+	"k": {
+	  "item": "powah:overcharged_core"
+	}
+  },
+  "result": {
+	"item": "powah:battery_overcharged"
+  }
+}

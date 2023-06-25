@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+	"bnb",
+	"ncn",
+	"bnb"
+  ],
+  "key": {
+	"c": {
+	  "item": "powah:energy_cell_nitro"
+	},
+	"n": {
+	  "item": "powah:capacitor_overcharged"
+	},
+	"b": {
+	  "item": "powah:overcharged_core"
+	}
+  },
+  "result": {
+	"item": "powah:energy_cell_overcharged"
+  }
+}

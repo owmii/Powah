@@ -4,7 +4,7 @@
 	{"tag": "forge:nether_stars"},
 	{"tag": "forge:storage_blocks/redstone"},
 	{"tag": "forge:storage_blocks/redstone"},
-	{"item": "powah:blazing_crystal_block"}
+	{"item": "forge:storage_blocks/blazing_crystal"}
   ],
   "energy": 20000000,
   "result": {

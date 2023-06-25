@@ -1,10 +1,10 @@
 {
     "replace": false,
     "values": [
-        "powah:blazing_crystal",
-        "powah:niotic_crystal",
-        "powah:spirited_crystal",
-        "powah:nitro_crystal",
+        "powah:crystal_blazing",
+        "powah:crystal_niotic",
+        "powah:crystal_spirited",
+        "powah:crystal_nitro",
         "powah:overcharged_core"
     ]
   }
