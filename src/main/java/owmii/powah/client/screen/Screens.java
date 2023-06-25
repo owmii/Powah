@@ -1,7 +1,6 @@
 package owmii.powah.client.screen;
 
 import net.minecraft.client.gui.ScreenManager;
-import owmii.lib.client.screen.wiki.WikiScreen;
 import owmii.powah.client.screen.container.*;
 import owmii.powah.inventory.Containers;
 

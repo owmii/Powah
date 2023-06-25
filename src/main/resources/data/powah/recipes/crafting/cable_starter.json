@@ -19,5 +19,11 @@
   "result": {
 	"item": "powah:energy_cable_starter",
 	"count": 12
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

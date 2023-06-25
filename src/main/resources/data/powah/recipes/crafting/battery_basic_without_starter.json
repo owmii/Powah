@@ -3,14 +3,11 @@
   "pattern": [
 	"oko",
 	"iri",
-	"oco"
+	"oko"
   ],
   "key": {
 	"r": {
 	  "item": "minecraft:redstone_block"
-	},
-	"c": {
-	  "item": "powah:battery_starter"
 	},
 	"i": {
 	  "item": "powah:capacitor_basic_large"
@@ -26,9 +23,9 @@
 	"item": "powah:battery_basic"
   },
   "conditions": [
-	  {
-		  "values": [{"type": "powah:starter"}],
-		  "type": "forge:and"
-	  }
+    {
+      "value": {"type": "powah:starter"},
+	  "type": "forge:not"
+	}
   ]
 }

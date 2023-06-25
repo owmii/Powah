@@ -7,5 +7,11 @@
   ],
   "result": {
 	"item": "powah:ender_gate_starter"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

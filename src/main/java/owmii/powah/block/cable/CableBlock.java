@@ -232,7 +232,6 @@ public class CableBlock extends AbstractEnergyBlock<Tier, CableConfig, CableBloc
                 if (state.getBlock() == this) {
                     TileEntity tileEntity = world.getTileEntity(blockPos);
                     if (tileEntity instanceof CableTile) {
-                        CableTile cable = (CableTile) tileEntity;
                         first.proxyMap.get(side).add(blockPos);
                     }
                     CableBlock cableBlock = (CableBlock) state.getBlock();
@@ -304,7 +303,8 @@ public class CableBlock extends AbstractEnergyBlock<Tier, CableConfig, CableBloc
                         double d7 = d4 * d1 + x;
                         double d8 = d5 * d2 + y;
                         double d9 = d6 * d3 + z;
-                        Minecraft.getInstance().particles.addEffect((new DiggingParticle((ClientWorld) world, (double) pos.getX() + d7, (double) pos.getY() + d8, (double) pos.getZ() + d9, d4 - 0.5D, d5 - 0.5D, d6 - 0.5D, state)).setBlockPos(pos));
+                        Minecraft instance = Minecraft.getInstance();
+                        instance.particles.addEffect((new DiggingParticle((ClientWorld) world, (double) pos.getX() + d7, (double) pos.getY() + d8, (double) pos.getZ() + d9, d4 - 0.5D, d5 - 0.5D, d6 - 0.5D, state)).setBlockPos(pos));
                     }
                 }
             }

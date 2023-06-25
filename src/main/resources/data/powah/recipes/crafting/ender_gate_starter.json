@@ -19,5 +19,11 @@
   "result": {
 	"item": "powah:ender_gate_starter",
 	"count": 4
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

@@ -49,6 +49,20 @@ minecraft {
                 }
             }
         }
+        data {
+            workingDirectory project.file('run')
+
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            args '--mod', 'powah', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            mods {
+                powah {
+                    source sourceSets.main
+                }
+            }
+        }
     }
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')

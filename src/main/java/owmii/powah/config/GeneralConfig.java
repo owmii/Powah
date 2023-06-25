@@ -6,10 +6,10 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import java.util.List;
 
 public class GeneralConfig {
+    public final ForgeConfigSpec.BooleanValue enable_starter;
     public final ForgeConfigSpec.BooleanValue player_aerial_pearl;
     public final ForgeConfigSpec.BooleanValue binding_card_dim;
     public final ForgeConfigSpec.BooleanValue lens_of_ender;
-
 
     public final ForgeConfigSpec.ConfigValue<List<String>> heatBlocks;
     public final ForgeConfigSpec.BooleanValue heatBlocksAPI;
@@ -26,6 +26,8 @@ public class GeneralConfig {
     public final ForgeConfigSpec.IntValue dryIceGenChance;
 
     public GeneralConfig(ForgeConfigSpec.Builder builder) {
+        this.enable_starter = builder.comment("", "If disabled, all of the starter tier items will be hidden and all of their recipes will be disabled. [default:true]")
+                .define("enable_starter", true);
         this.player_aerial_pearl = builder.comment("", "Enable this to get Player Aerial Pearl by right clicking a Zombie or Husk with a Aerial Pearl. [default:true]")
                 .define("player_aerial_pearl", true);
         this.binding_card_dim = builder.comment("", "Enable this to get Dimensional Binding card by right clicking an Enderman or Endermite with a Binding card. [default:true]")

@@ -21,5 +21,11 @@
   },
   "result": {
 	"item": "powah:magmator_basic"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

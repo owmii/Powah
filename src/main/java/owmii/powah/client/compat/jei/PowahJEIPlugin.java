@@ -1,5 +1,7 @@
 package owmii.powah.client.compat.jei;
 
+import com.google.common.collect.Lists;
+
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -7,10 +9,11 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
+import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.I18n;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.TranslationTextComponent;
 import owmii.lib.util.Recipe;
 import owmii.powah.Powah;
 import owmii.powah.block.Blcks;
@@ -50,20 +53,29 @@ public class PowahJEIPlugin implements IModPlugin {
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
-        registration.addRecipes(Recipe.getAll(Minecraft.getInstance().world, Recipes.ENERGIZING), EnergizingCategory.ID);
+        Minecraft instance = Minecraft.getInstance();
+        registration.addRecipes(Recipe.getAll(instance.world, Recipes.ENERGIZING), EnergizingCategory.ID);
         registration.addRecipes(MagmatorCategory.Maker.getBucketRecipes(registration.getIngredientManager()), MagmatorCategory.ID);
         registration.addRecipes(CoolantCategory.Maker.getBucketRecipes(registration.getIngredientManager()), CoolantCategory.ID);
         registration.addRecipes(SolidCoolantCategory.Maker.getBucketRecipes(registration.getIngredientManager()), SolidCoolantCategory.ID);
         registration.addRecipes(HeatSourceCategory.Maker.getBucketRecipes(registration.getIngredientManager()), HeatSourceCategory.ID);
 
         if (Configs.GENERAL.player_aerial_pearl.get())
-            registration.addIngredientInfo(new ItemStack(Itms.PLAYER_AERIAL_PEARL), VanillaTypes.ITEM, I18n.format("jei.powah.player_aerial_pearl"));
+            registration.addIngredientInfo(new ItemStack(Itms.PLAYER_AERIAL_PEARL), VanillaTypes.ITEM, new TranslationTextComponent("jei.powah.player_aerial_pearl"));
         if (Configs.GENERAL.binding_card_dim.get())
-            registration.addIngredientInfo(new ItemStack(Itms.BINDING_CARD_DIM), VanillaTypes.ITEM, I18n.format("jei.powah.binding_card_dim"));
+            registration.addIngredientInfo(new ItemStack(Itms.BINDING_CARD_DIM), VanillaTypes.ITEM, new TranslationTextComponent("jei.powah.binding_card_dim"));
         if (Configs.GENERAL.lens_of_ender.get())
-            registration.addIngredientInfo(new ItemStack(Itms.LENS_OF_ENDER), VanillaTypes.ITEM, I18n.format("jei.powah.lens_of_ender"));
+            registration.addIngredientInfo(new ItemStack(Itms.LENS_OF_ENDER), VanillaTypes.ITEM, new TranslationTextComponent("jei.powah.lens_of_ender"));
     }
 
+    @Override
+    public void onRuntimeAvailable(IJeiRuntime r) {
+        if (Configs.GENERAL.enable_starter.get()) return;
+
+        Itms.REG.forEach(i -> {
+            if (i.getRegistryName().getNamespace().equals(Powah.MOD_ID) && i.getRegistryName().getPath().endsWith("_starter")) r.getIngredientManager().removeIngredientsAtRuntime(VanillaTypes.ITEM, Lists.newArrayList(i.getDefaultInstance()));
+        });
+    }
 
     @Override
     public ResourceLocation getPluginUid() {

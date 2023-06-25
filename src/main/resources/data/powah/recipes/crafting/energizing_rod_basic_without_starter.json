@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      " q ",
+      "bcb",
+      " h "
+    ],
+    "key": {
+      "q": {
+        "tag": "forge:storage_blocks/quartz"
+      },
+      "h": {
+        "tag": "forge:gems/quartz"
+      },
+      "b": {
+        "item": "powah:capacitor_basic"
+      },
+      "c": {
+        "item": "powah:dielectric_casing"
+      }
+    },
+    "result": {
+      "item": "powah:energizing_rod_basic"
+    },
+  "conditions": [
+    {
+      "value": {"type": "powah:starter"},
+	  "type": "forge:not"
+	}
+  ]
+}

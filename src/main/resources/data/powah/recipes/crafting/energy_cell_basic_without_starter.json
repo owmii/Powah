@@ -13,16 +13,16 @@
 			"item": "minecraft:iron_ingot"
 		},
 		"d": {
-			"item": "powah:energy_cell_starter"
+			"item": "powah:dielectric_casing"
 		}
 	},
 	"result": {
 		"item": "powah:energy_cell_basic"
 	},
-	"conditions": [
-		{
-			"values": [{"type": "powah:starter"}],
-			"type": "forge:and"
-		}
-	]
+  "conditions": [
+    {
+      "value": {"type": "powah:starter"},
+      "type": "forge:not"
+    }
+  ]
 }

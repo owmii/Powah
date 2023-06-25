@@ -36,6 +36,11 @@ public class ITags {
         public static final Tags.IOptionalNamedTag<Item> URANINITE_ORE_POOR = tag("ores/uraninite_poor");
         public static final Tags.IOptionalNamedTag<Item> URANINITE_ORE_DENSE = tag("ores/uraninite_dense");
         public static final Tags.IOptionalNamedTag<Item> URANINITE_BLOCK = tag("storage_blocks/uraninite");
+        public static final Tags.IOptionalNamedTag<Item> ENERGIZED_STEEL_BLOCK = tag("storage_blocks/energized_steel");
+        public static final Tags.IOptionalNamedTag<Item> BLAZING_CRYSTAL_BLOCK = tag("storage_blocks/blazing_crystal");
+        public static final Tags.IOptionalNamedTag<Item> NIOTIC_CRYSTAL_BLOCK = tag("storage_blocks/niotic_crystal");
+        public static final Tags.IOptionalNamedTag<Item> SPIRITED_CRYSTAL_BLOCK = tag("storage_blocks/spirited_crystal");
+        public static final Tags.IOptionalNamedTag<Item> NITRO_CRYSTAL_BLOCK = tag("storage_blocks/nitro_crystal");
 
         private static Tags.IOptionalNamedTag<Item> tag(String name) {
             return ItemTags.createOptional(new ResourceLocation("forge", name));

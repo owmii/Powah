@@ -118,7 +118,8 @@ public class ReactorItem extends EnergyBlockItem<Tier, ReactorConfig, ReactorBlo
                 }
             }
             matrix.push();
-            Vector3d projectedView = Minecraft.getInstance().gameRenderer.getActiveRenderInfo().getProjectedView();
+            Minecraft instance = Minecraft.getInstance();
+            Vector3d projectedView = instance.gameRenderer.getActiveRenderInfo().getProjectedView();
             matrix.translate(-projectedView.x, -projectedView.y, -projectedView.z);
             matrix.translate(-1.0D, 0.001D, -1.0D);
             float r = (color >> 16 & 0xFF) / 255.0F;

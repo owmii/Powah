@@ -35,6 +35,7 @@ public class Itms {
     public static final Item NIOTIC_CRYSTAL = REG.register("crystal_niotic", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item SPIRITED_CRYSTAL = REG.register("crystal_spirited", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item NITRO_CRYSTAL = REG.register("crystal_nitro", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item OVERCHARGED_CORE = REG.register("overcharged_core", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item ENDER_CORE = REG.register("ender_core", new ItemBase(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item CHARGED_SNOWBALL = REG.register("charged_snowball", new ChargedSnowballItem(new Item.Properties().group(ItemGroups.MAIN).maxStackSize(16)));
     public static final Item URANINITE_RAW_POOR = REG.register("uraninite_raw_poor", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));

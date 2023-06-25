@@ -21,5 +21,11 @@
   },
   "result": {
 	"item": "powah:thermo_generator_starter"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

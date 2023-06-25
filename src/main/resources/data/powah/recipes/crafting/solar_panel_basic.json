@@ -21,5 +21,11 @@
   },
   "result": {
 	"item": "powah:solar_panel_basic"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

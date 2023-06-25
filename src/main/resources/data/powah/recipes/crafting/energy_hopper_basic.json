@@ -21,5 +21,11 @@
   },
   "result": {
 	"item": "powah:energy_hopper_basic"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

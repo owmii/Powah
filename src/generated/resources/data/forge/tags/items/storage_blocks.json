@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "powah:uraninite_block"
+    "powah:uraninite_block",
+    "powah:energized_steel_block",
+    "powah:blazing_crystal_block",
+    "powah:niotic_crystal_block",
+    "powah:spirited_crystal_block",
+    "powah:nitro_crystal_block"
   ]
 }

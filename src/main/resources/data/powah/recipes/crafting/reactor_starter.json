@@ -19,5 +19,11 @@
   "result": {
 	"item": "powah:reactor_starter",
 	"count": 4
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

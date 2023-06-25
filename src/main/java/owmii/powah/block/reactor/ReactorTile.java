@@ -4,7 +4,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ResourceLocation;
@@ -185,7 +184,6 @@ public class ReactorTile extends AbstractEnergyProvider<Tier, ReactorConfig, Rea
 
     public double calcConsumption() {
         if (this.running) {
-            double d1 = 1.0D + (this.variant.ordinal() * 0.25D);
             return (1.0D + this.variant.ordinal() * 0.25D) * calc();
         } else return 0.0D;
     }

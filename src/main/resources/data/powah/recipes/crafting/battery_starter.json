@@ -18,5 +18,11 @@
   },
   "result": {
 	"item": "powah:battery_starter"
-  }
+  },
+  "conditions": [
+	  {
+		  "values": [{"type": "powah:starter"}],
+		  "type": "forge:and"
+	  }
+  ]
 }

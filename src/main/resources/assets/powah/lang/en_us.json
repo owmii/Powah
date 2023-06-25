@@ -191,6 +191,7 @@
   "block.powah.player_transmitter_overcharged": "Player Transmitter (Overcharged)",
   "block.powah.energy_hopper_overcharged": "Energy Hopper (Overcharged)",
   "block.powah.energy_discharger_overcharged": "Energy Discharger (Overcharged)",
+  "item.powah.overcharged_core": "Overcharged Core",
   "item.powah.battery_overcharged": "Battery (Overcharged)",
   "item.powah.capacitor_overcharged": "Overcharged Capacitor",
   "item.powah.capacitor_creative": "Creative Capacitor",

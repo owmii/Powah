@@ -49,7 +49,6 @@ public class ThermoTile extends AbstractEnergyProvider<Tier, ThermoConfig, Therm
     @Override
     protected int postTick(World world) {
         boolean flag = chargeItems(1) + extractFromSides(world) > 0;
-        int i = 0;
         if (!isRemote() && checkRedstone() && !this.tank.isEmpty()) {
             FluidStack fluid = this.tank.getFluid();
             if (PowahAPI.COOLANTS.containsKey(fluid.getFluid())) {

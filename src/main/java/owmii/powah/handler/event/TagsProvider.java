@@ -57,8 +57,20 @@ public class TagsProvider {
             getOrCreateBuilder(ITags.Items.URANINITE_ORE_POOR).add(Blcks.URANINITE_ORE_POOR.asItem());
             getOrCreateBuilder(ITags.Items.URANINITE_ORE_DENSE).add(Blcks.URANINITE_ORE_DENSE.asItem());
 
-            getOrCreateBuilder(Tags.Items.STORAGE_BLOCKS).add(Blcks.URANINITE.asItem());
+            getOrCreateBuilder(Tags.Items.STORAGE_BLOCKS).add(
+                Blcks.URANINITE.asItem(),
+                Blcks.ENERGIZED_STEEL.asItem(),
+                Blcks.BLAZING_CRYSTAL.asItem(), 
+                Blcks.NIOTIC_CRYSTAL.asItem(),
+                Blcks.SPIRITED_CRYSTAL.asItem(),
+                Blcks.NITRO_CRYSTAL.asItem()
+            );
             getOrCreateBuilder(ITags.Items.URANINITE_BLOCK).add(Blcks.URANINITE.asItem());
+            getOrCreateBuilder(ITags.Items.ENERGIZED_STEEL_BLOCK).add(Blcks.ENERGIZED_STEEL.asItem());
+            getOrCreateBuilder(ITags.Items.BLAZING_CRYSTAL_BLOCK).add(Blcks.BLAZING_CRYSTAL.asItem());
+            getOrCreateBuilder(ITags.Items.NIOTIC_CRYSTAL_BLOCK).add(Blcks.NIOTIC_CRYSTAL.asItem());
+            getOrCreateBuilder(ITags.Items.SPIRITED_CRYSTAL_BLOCK).add(Blcks.SPIRITED_CRYSTAL.asItem());
+            getOrCreateBuilder(ITags.Items.NITRO_CRYSTAL_BLOCK).add(Blcks.NITRO_CRYSTAL.asItem());
         }
     }
 }

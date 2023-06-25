@@ -52,7 +52,6 @@ public class WrenchItem extends ItemBase implements IHudItem, IWrench {
                     CableTile cable = (CableTile) te;
                     if (stack.getItem() instanceof WrenchItem) {
                         Optional<Direction> sides = CableBlock.getHitSide(hit, pos);
-                        boolean[] flag = {false};
                         sides.ifPresent(direction -> {
                             SideConfig config = cable.getSideConfig();
                             config.nextType(direction);
@@ -105,32 +104,13 @@ public class WrenchItem extends ItemBase implements IHudItem, IWrench {
         return false;
     }
 
-    private boolean changeWrenchMode(ItemStack stack, boolean next) {
-        if (stack.getItem() instanceof IWrench)
-            if (next) {
-                nextWrenchMode(stack);
-                return true;
-            } else {
-                prevWrenchMode(stack);
-                return true;
-            }
-        return false;
-    }
-
     private void nextWrenchMode(ItemStack stack) {
         CompoundNBT nbt = getWrenchNBT(stack);
         int i = nbt.getInt("WrenchMode") + 1;
         int j = WrenchMode.values().length - 1;
         nbt.putInt("WrenchMode", i > j ? 0 : i);
     }
-
-    private void prevWrenchMode(ItemStack stack) {
-        CompoundNBT nbt = getWrenchNBT(stack);
-        int i = nbt.getInt("WrenchMode") - 1;
-        int j = WrenchMode.values().length - 1;
-        nbt.putInt("WrenchMode", i < j ? j : i);
-    }
-
+    
     @Override
     public WrenchMode getWrenchMode(ItemStack stack) {
         return WrenchMode.values()[getWrenchNBT(stack).getInt("WrenchMode")];

@@ -191,6 +191,7 @@
   "block.powah.player_transmitter_overcharged": "Беспроводной зарядник (Перегруженный)",
   "block.powah.energy_hopper_overcharged": "Энерговоронка (Перегруженная)",
   "block.powah.energy_discharger_overcharged": "Энергоразрядник (Перегруженный)",
+  "item.powah.overcharged_core": "Перегруженное ядро",
   "item.powah.battery_overcharged": "Аккумулятор (Перегруженный)",
   "item.powah.capacitor_overcharged": "Перегруженный конденсатор",
   "item.powah.capacitor_creative": "Креативный конденсатор",
