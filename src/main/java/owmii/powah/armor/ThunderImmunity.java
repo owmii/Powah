@@ -8,6 +8,8 @@ import net.minecraft.potion.Effects;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -34,6 +36,7 @@ public class ThunderImmunity {
     }
 
     @SubscribeEvent
+    @OnlyIn(Dist.CLIENT)
     public static void addToolTip(ItemTooltipEvent e) {
         if (e.getItemStack().getItem() instanceof ArmorItem && e.getItemStack().getItem().getRegistryName().getNamespace().equals(Powah.MOD_ID)) e.getToolTip().add(new TranslationTextComponent("tooltip.powah.armor_lightning_immunity").mergeStyle(TextFormatting.BLUE));
     }
