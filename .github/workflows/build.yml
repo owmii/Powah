@@ -14,7 +14,7 @@ jobs:
         continue-on-error: true
       - run: ./gradlew build
       - run: echo "VERSION=$(ls build/libs | cut -d "-" -f 2- | cut -d "." -f 1)" >> $GITHUB_ENV
-      - run: echo "FILE=$(ls -d build/libs/*-all)" >> $GITHUB_ENV
+      - run: echo "FILE=$(ls -d build/libs/*)" >> $GITHUB_ENV
       - run: echo "FILENAME=$(ls build/libs)" >> $GITHUB_ENV
 
       - uses: actions/create-release@v1
