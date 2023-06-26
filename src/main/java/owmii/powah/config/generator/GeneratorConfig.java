@@ -18,6 +18,7 @@ public class GeneratorConfig extends EnergyConfig {
     public final ForgeConfigSpec.LongValue nioticGeneration;
     public final ForgeConfigSpec.LongValue spiritedGeneration;
     public final ForgeConfigSpec.LongValue nitroGeneration;
+    public final ForgeConfigSpec.LongValue overchargedGeneration;
 
     public GeneratorConfig(ForgeConfigSpec.Builder builder, long[] caps, long[] trs, long[] gens) {
         super(builder, caps, trs);
@@ -29,6 +30,7 @@ public class GeneratorConfig extends EnergyConfig {
         this.nioticGeneration = builder.defineInRange("nioticGeneration", gens[4], Energy.MIN, Energy.MAX);
         this.spiritedGeneration = builder.defineInRange("spiritedGeneration", gens[5], Energy.MIN, Energy.MAX);
         this.nitroGeneration = builder.defineInRange("nitroGeneration", gens[6], Energy.MIN, Energy.MAX);
+        this.overchargedGeneration = builder.defineInRange("overchargedGeneration", gens[7], Energy.MIN, Energy.MAX);
         builder.pop();
     }
 
@@ -42,6 +44,7 @@ public class GeneratorConfig extends EnergyConfig {
         this.generation.put(Tier.NIOTIC, this.nioticGeneration.get());
         this.generation.put(Tier.SPIRITED, this.spiritedGeneration.get());
         this.generation.put(Tier.NITRO, this.nitroGeneration.get());
+        this.generation.put(Tier.OVERCHARGED, this.overchargedGeneration.get());
         this.generation.put(Tier.CREATIVE, Energy.MAX);
     }
 

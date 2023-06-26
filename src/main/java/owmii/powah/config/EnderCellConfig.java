@@ -16,6 +16,7 @@ public class EnderCellConfig extends EnergyConfig {
     public final ForgeConfigSpec.IntValue nioticChannels;
     public final ForgeConfigSpec.IntValue spiritedChannels;
     public final ForgeConfigSpec.IntValue nitroChannels;
+    public final ForgeConfigSpec.IntValue overchargedChannels;
 
     public EnderCellConfig(ForgeConfigSpec.Builder builder) {
         this(builder,
@@ -28,13 +29,14 @@ public class EnderCellConfig extends EnergyConfig {
     public EnderCellConfig(ForgeConfigSpec.Builder builder, long[] caps, long[] trs, int[] channels) {
         super(builder, caps, trs);
         builder.push("Channels");
-        this.starterChannels = builder.defineInRange("starterChannels", channels[0], 1, 12);
-        this.basicChannels = builder.defineInRange("basicChannels", channels[1], 1, 12);
-        this.hardenedChannels = builder.defineInRange("hardenedChannels", channels[2], 1, 12);
-        this.blazingChannels = builder.defineInRange("blazingChannels", channels[3], 1, 12);
-        this.nioticChannels = builder.defineInRange("nioticChannels", channels[4], 1, 12);
-        this.spiritedChannels = builder.defineInRange("spiritedChannels", channels[5], 1, 12);
-        this.nitroChannels = builder.defineInRange("nitroChannels", channels[6], 1, 12);
+        this.starterChannels = builder.defineInRange("starterChannels", channels[0], 1, 15);
+        this.basicChannels = builder.defineInRange("basicChannels", channels[1], 1, 15);
+        this.hardenedChannels = builder.defineInRange("hardenedChannels", channels[2], 1, 15);
+        this.blazingChannels = builder.defineInRange("blazingChannels", channels[3], 1, 15);
+        this.nioticChannels = builder.defineInRange("nioticChannels", channels[4], 1, 15);
+        this.spiritedChannels = builder.defineInRange("spiritedChannels", channels[5], 1, 15);
+        this.nitroChannels = builder.defineInRange("nitroChannels", channels[6], 1, 15);
+        this.overchargedChannels = builder.defineInRange("overchargedChannels", channels[7], 1, 15);
         builder.pop();
     }
 
@@ -48,6 +50,7 @@ public class EnderCellConfig extends EnergyConfig {
         this.channels.put(Tier.NIOTIC, this.nioticChannels.get());
         this.channels.put(Tier.SPIRITED, this.spiritedChannels.get());
         this.channels.put(Tier.NITRO, this.nitroChannels.get());
+        this.channels.put(Tier.OVERCHARGED, this.overchargedChannels.get());
     }
 
     public int getChannels(Tier variant) {

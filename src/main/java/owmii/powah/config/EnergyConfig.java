@@ -39,7 +39,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.nioticCap = builder.defineInRange("nioticCap", caps[4], Energy.MIN, Energy.MAX);
         this.spiritedCap = builder.defineInRange("spiritedCap", caps[5], Energy.MIN, Energy.MAX);
         this.nitroCap = builder.defineInRange("nitroCap", caps[6], Energy.MIN, Energy.MAX);
-        this.overchargedCap = builder.defineInRange("overchargedCap", caps[6], Energy.MIN, Energy.MAX);
+        this.overchargedCap = builder.defineInRange("overchargedCap", caps[7], Energy.MIN, Energy.MAX);
         builder.pop();
 
         builder.push("Energy_Transfer");
@@ -50,7 +50,7 @@ public class EnergyConfig implements IEnergyConfig<Tier> {
         this.nioticTransfer = builder.defineInRange("nioticTransfer", trs[4], Energy.MIN, Energy.MAX);
         this.spiritedTransfer = builder.defineInRange("spiritedTransfer", trs[5], Energy.MIN, Energy.MAX);
         this.nitroTransfer = builder.defineInRange("nitroTransfer", trs[6], Energy.MIN, Energy.MAX);
-        this.overchargedTransfer = builder.defineInRange("overchargedTransfer", trs[6], Energy.MIN, Energy.MAX);
+        this.overchargedTransfer = builder.defineInRange("overchargedTransfer", trs[7], Energy.MIN, Energy.MAX);
         builder.pop();
     }
 

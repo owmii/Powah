@@ -17,6 +17,7 @@ public class PlayerTransmitterConfig extends EnergyConfig {
     public final ForgeConfigSpec.LongValue nioticChargingSpeed;
     public final ForgeConfigSpec.LongValue spiritedChargingSpeed;
     public final ForgeConfigSpec.LongValue nitroChargingSpeed;
+    public final ForgeConfigSpec.LongValue overchargedChargingSpeed;
 
     public PlayerTransmitterConfig(ForgeConfigSpec.Builder builder) {
         super(builder,
@@ -31,6 +32,7 @@ public class PlayerTransmitterConfig extends EnergyConfig {
         this.nioticChargingSpeed = builder.defineInRange("nioticChargingSpeed", 12000, Energy.MIN, Energy.MAX);
         this.spiritedChargingSpeed = builder.defineInRange("spiritedChargingSpeed", 20000, Energy.MIN, Energy.MAX);
         this.nitroChargingSpeed = builder.defineInRange("nitroChargingSpeed", 50000, Energy.MIN, Energy.MAX);
+        this.overchargedChargingSpeed = builder.defineInRange("overchargedChargingSpeed", 100000, Energy.MIN, Energy.MAX);
         builder.pop();
     }
 
@@ -44,6 +46,7 @@ public class PlayerTransmitterConfig extends EnergyConfig {
         this.chargingSpeed.put(Tier.NIOTIC, this.nioticChargingSpeed.get());
         this.chargingSpeed.put(Tier.SPIRITED, this.spiritedChargingSpeed.get());
         this.chargingSpeed.put(Tier.NITRO, this.nitroChargingSpeed.get());
+        this.chargingSpeed.put(Tier.OVERCHARGED, this.overchargedChargingSpeed.get());
         this.chargingSpeed.put(Tier.CREATIVE, Energy.MAX);
     }
 
