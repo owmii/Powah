@@ -1,0 +1,42 @@
+name: Build
+run-name: Building the mod...
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: rm -rf src/generated
+      - run: ./gradlew runData
+      - run: ./gradlew build
+      - run: echo "VERSION=$(ls build/libs | cut -d "-" -f 2- | cut -d "." -f 1)" >> $GITHUB_ENV
+      - run: echo "FILE=$(ls -d build/libs/*-all)" >> $GITHUB_ENV
+      - run: echo "FILENAME=$(ls build/libs)" >> $GITHUB_ENV
+
+      - uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: ${{ env.VERSION }}
+          draft: true
+          prerelease: false
+        id: create_release
+
+      - uses: actions/upload-release-asset@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ env.FILE }}
+          asset_name: ${{ env.FILENAME }}
+          asset_content_type: application/java-archive
+          
+      - uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.create_release.outputs.id }}
