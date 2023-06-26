@@ -10,11 +10,13 @@ version="${file.jarVersion}"
 
 displayName="Powah: Overcharged"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/powah"
+logoFile="pack.png"
+
 authors="Hellish Mods & Modern Modpacks"
 credits="""
 owmii (Original author)
-Rainbuu (Coding)
-G_cat (Tech support)
+Rainbuu (Coding, Assets)
+G_cat (Tech support, Coding, Assets)
 """
 description="A fork of the mod Powah to add more customizability for Modern Modpacks."
 
@@ -40,9 +42,24 @@ description="A fork of the mod Powah to add more customizability for Modern Modp
     ordering="NONE"
     side="BOTH"
 [[dependencies.powah]]
+    modId="jei"
+    mandatory=false
+
+    versionRange=","
+    ordering="NONE"
+    side="CLIENT"
+[[dependencies.powah]]
     modId="patchouli"
     mandatory=false
 
     versionRange="[1.16.4-53.2,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.powah]]
+    modId="kubejs"
+    mandatory=false
+
+    versionRange=","
+    ordering="NONE"
+    side="BOTH"
+
