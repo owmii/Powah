@@ -1,0 +1,84 @@
+name: deploy
+run-name: Deploying the mod...
+
+on: 
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version Title"
+        required: true
+      type:
+        type: choice
+        description: "Release Type"
+        options:
+        - release
+        - beta
+        - alpha
+        required: false
+        default: "release"
+      deps:
+        description: "Dependencies"
+        required: false
+        default: "lollipop,jei(optional),kubejs(optional),patchouli(optional)"
+      assets:
+        type: boolean
+        description: "Generate assets"
+        required: false
+        default: false
+      publish:
+        type: boolean
+        description: "Publish to curseforge and modrinth"
+        required: false
+        default: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: rm -rf src/generated
+        if: github.event.inputs.assets == 'true'
+      - run: ./gradlew runData
+        if: github.event.inputs.assets == 'true'
+        continue-on-error: true
+      - run: VERSION="${{ github.event.inputs.version }}" ./gradlew build
+      
+      - run: echo "DEPS=$(echo "${{ github.event.inputs.deps }}" | sed 's/,/\n/g')" >> $GITHUB_ENV
+      - run: echo "FILE=$(ls -d build/libs/*)" >> $GITHUB_ENV
+      - run: echo "FILENAME=$(cd build/libs; ls *)" >> $GITHUB_ENV
+      - run: cd ../../
+
+      - uses: Kir-Antipov/mc-publish@v3.3
+        if: github.event.inputs.publish == 'true'
+        with:
+          name: ${{ env.FILENAME }}
+          version: ${{ github.event.inputs.version }}
+          version-type: ${{ github.event.inputs.type }}
+          loaders: "forge"
+          game-versions: "1.16.5"
+          dependencies: ${{ env.DEPS }}
+          java: "8"
+
+          modrinth-id: "EGg0HxZu"
+          modrinth-token: ${{ secrets.MODRINTH_API_TOKEN }}
+
+          curseforge-id: 870679
+          curseforge-token: ${{ secrets.CF_API_TOKEN }}
+
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-tag: ${{ github.event.inputs.version }}
+
+      - uses: Kir-Antipov/mc-publish@v3.3
+        if: github.event.inputs.publish == 'false'
+        with:
+          name: ${{ env.FILENAME }}
+          version: ${{ github.event.inputs.version }}
+          version-type: ${{ github.event.inputs.type }}
+          loaders: "forge"
+          game-versions: "1.16.5"
+          dependencies: ${{ env.DEPS }}
+          java: "8"
+
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-tag: ${{ github.event.inputs.version }}
