@@ -44,7 +44,8 @@ jobs:
         continue-on-error: true
       - run: VERSION="${{ github.event.inputs.version }}" ./gradlew build
       
-      - run: |
+      - 
+        run: |
         echo "DEPS<<EOF" >> $GITHUB_ENV
         echo "${{ github.event.inputs.deps }}" | sed "s/,/\n/g" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
