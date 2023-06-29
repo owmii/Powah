@@ -44,7 +44,10 @@ jobs:
         continue-on-error: true
       - run: VERSION="${{ github.event.inputs.version }}" ./gradlew build
       
-      - run: echo "DEPS=$(echo "${{ github.event.inputs.deps }}" | sed 's/,/\n/g')" >> $GITHUB_ENV
+      - run: echo "DEPS<<EOF" >> $GITHUB_ENV
+      - run: echo "${{ github.event.inputs.deps }}" | sed "s/,/\n/g" >> $GITHUB_ENV
+      - run: echo "EOF" >> $GITHUB_ENV
+
       - run: echo "FILE=$(ls -d build/libs/*)" >> $GITHUB_ENV
       - run: echo "FILENAME=$(cd build/libs; ls *)" >> $GITHUB_ENV
       - run: cd ../../
