@@ -19,8 +19,8 @@ public class EnergizingJS extends RecipeJS {
 
     @Override
     public void deserialize() {
-        inputItems.addAll(parseIngredientItemList(json.get("ingredients")));
         outputItems.add(parseResultItem(json.get("result")));
+        inputItems.addAll(parseIngredientItemList(json.get("ingredients")));
         energy = json.get("energy").getAsLong();
     }
     @Override
@@ -28,8 +28,8 @@ public class EnergizingJS extends RecipeJS {
         JsonArray itemStackArray = new JsonArray();
         inputItems.forEach(i -> {itemStackArray.add(i.toJson());});
 
+        json.add("result", outputItems.get(0).toResultJson());
         json.add("ingredients", itemStackArray);
-        json.add("result", outputItems.get(0).toJson());
         json.addProperty("energy", energy);
     }
 }

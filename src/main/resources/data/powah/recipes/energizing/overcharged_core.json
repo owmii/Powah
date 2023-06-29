@@ -2,7 +2,6 @@
   "type": "powah:energizing",
   "ingredients": [
 	{"item": "minecraft:end_crystal"},
-	{"item": "minecraft:dragon_egg"},
 	{"item": "minecraft:dragon_head"},
 	{"tag": "forge:storage_blocks/nitro_crystal"},
 	{"tag": "forge:storage_blocks/nitro_crystal"}
