@@ -24,7 +24,7 @@ on:
         type: boolean
         description: "Generate assets"
         required: false
-        default: false
+        default: true
       publish:
         type: boolean
         description: "Publish to curseforge and modrinth"
