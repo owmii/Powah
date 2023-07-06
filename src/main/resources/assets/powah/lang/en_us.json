@@ -197,8 +197,8 @@
   "item.powah.capacitor_creative": "Creative Capacitor",
   "item.powah.battery_creative": "Battery (Creative)",
   "tooltip.powah.armor_lightning_immunity": "Grants lightning bolt damange immunity when a full set of Powah armor is worn.",
-  "item.powah.energized_steel_helmet": "Energized Steel Helmet",
-  "item.powah.energized_steel_chestplate": "Energized Steel Chestplate",
-  "item.powah.energized_steel_leggings": "Energized Steel Leggings",
-  "item.powah.energized_steel_boots": "Energized Steel Boots"
+  "item.powah.energized_boots_starter": "Energized Boots (Starter)",
+  "item.powah.energized_leggings_starter": "Energized Leggings (Starter)",
+  "item.powah.energized_chestplate_starter": "Energized Chestplate (Starter)",
+  "item.powah.energized_helmet_starter": "Energized Helmet (Starter)"
 }

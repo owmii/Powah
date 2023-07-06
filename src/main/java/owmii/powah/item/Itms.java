@@ -42,8 +42,8 @@ public class Itms {
     public static final Item URANINITE_RAW = REG.register("uraninite_raw", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item URANINITE_RAW_DENSE = REG.register("uraninite_raw_dense", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item URANINITE = REG.register("uraninite", new UraniniteItem(new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item ENERGIZED_STEEL_BOOTS = REG.register("energized_steel_boots", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item ENERGIZED_STEEL_LEGGINGS = REG.register("energized_steel_leggings", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item ENERGIZED_STEEL_CHESTPLATE = REG.register("energized_steel_chestplate", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
-    public static final Item ENERGIZED_STEEL_HELMET = REG.register("energized_steel_helmet", new ArmorItem(ModArmorMaterial.ENERGIZED_STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_STARTER = REG.register("energized_boots_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_STARTER = REG.register("energized_leggings_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_STARTER = REG.register("energized_chestplate_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_STARTER = REG.register("energized_helmet_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
 }
