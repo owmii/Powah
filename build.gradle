@@ -17,7 +17,7 @@ apply plugin: 'org.spongepowered.mixin'
 
 version = "${System.env.VERSION}"
 group = 'owmii.powah'
-archivesBaseName = 'powah'
+archivesBaseName = 'powahovercharged'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'
 
