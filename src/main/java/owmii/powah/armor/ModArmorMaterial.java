@@ -15,9 +15,34 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements IArmorMaterial {
 
-    ENERGIZED_STEEL("energized_steel", 7, new int[] { 2, 5, 6, 2 }, 12,
+    ARMOR_STARTER("energized_armor_starter", 7, new int[] { 2, 5, 6, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+
+    ARMOR_BASIC("energized_armor_basic", 7, new int[] { 2, 5, 6, 2}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+    ARMOR_HARDENED("energized_armor_hardened", 7, new int[] { 2, 5, 6, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+
+    ARMOR_BLAZING("energized_armor_blazing", 7, new int[] { 2, 5, 6, 2}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+    ARMOR_NIOTIC("energized_armor_niotic", 7, new int[] { 2, 5, 6, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+
+    ARMOR_SPIRITED("energized_armor_spirited", 7, new int[] { 2, 5, 6, 2}, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+    ARMOR_NITRO("energized_armor_nitro", 7, new int[] { 2, 5, 6, 2 }, 12,
+            SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
+    ),
+    ARMOR_OVERCHARGED("energized_armor_overcharged", 7, new int[] { 2, 5, 6, 2}, 12,
             SoundEvents.ITEM_ARMOR_EQUIP_IRON, 1.0f, 0.0f, () -> Ingredient.fromItems(Itms.ENERGIZED_STEEL)
     );
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -75,5 +100,6 @@ public enum ModArmorMaterial implements IArmorMaterial {
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
+
 
 }
