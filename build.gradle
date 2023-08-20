@@ -71,7 +71,7 @@ minecraft {
 sourceSets.main.resources { srcDirs = ["src/main/resources", "src/generated/resources"] }
 
 repositories {
-    maven { url = "https://dvs1.progwml6.com/files/maven" } //JEI
+    maven { url = "https://maven.blamejared.com/" } //Jei
     maven { url = "https://maven.theillusivec4.top" } //Curios
     maven {
         name "cursemaven"
