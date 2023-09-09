@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "owmii.powah.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "client": [
+        "AbstractBlockMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "refmap": "powah.mixin-refmap.json"
+}

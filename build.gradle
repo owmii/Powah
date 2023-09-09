@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'https://repo.spongepowered.org/maven' }
         jcenter()
         mavenCentral()
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
@@ -30,6 +31,8 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
+
+            arg "-mixin.config=powah.mixin.json"
 
             mods {
                 powah {
@@ -110,10 +113,17 @@ dependencies {
 
 tasks.withType(Copy).all { duplicatesStrategy 'exclude' }
 
+mixin {
+    add sourceSets.main, "powah.mixin-refmap.json"
+}
+
 jar {
     manifest {
         attributes([
                 'FMLAT'                   : 'accesstransformer.cfg',
+                "TweakClass"              : "org.spongepowered.asm.launch.MixinTweaker",
+                "TweakOrder"              : 0,
+                "MixinConfigs"            : "modid.mixin.json",
                 "Specification-Title"     : mod_name,
                 "Specification-Vendor"    : "owmii",
                 "Specification-Version"   : mod_version,
