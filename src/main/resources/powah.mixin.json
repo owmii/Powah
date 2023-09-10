@@ -3,7 +3,8 @@
     "package": "owmii.powah.mixin",
     "compatibilityLevel": "JAVA_8",
     "client": [
-        "AbstractBlockMixin"
+        "AbstractBlockMixin",
+        "VarItemMixin"
     ],
     "injectors": {
         "defaultRequire": 1
