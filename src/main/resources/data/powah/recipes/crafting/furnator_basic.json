@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	"iii",
-	"cdc",
-	"ifi"
+	"cfc",
+	"iii"
   ],
   "key": {
 	"c": {
@@ -14,9 +14,6 @@
 	},
 	"f": {
 	  "item": "powah:furnator_starter"
-	},
-	"d": {
-	  "item": "powah:dielectric_casing"
 	}
   },
   "result": {
