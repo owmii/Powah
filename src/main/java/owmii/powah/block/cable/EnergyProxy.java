@@ -16,7 +16,7 @@ import java.util.*;
 public class EnergyProxy {
     public final Map<Direction, EnergyProxy> proxies = new HashMap<>();
     public final List<BlockPos> searchCache = new ArrayList<>();
-    public final List<BlockPos> cables = new ArrayList<>();
+    public final HashSet<BlockPos> cables = new HashSet<>();
 
     public void init() {
         for (Direction side : Direction.values()) {
@@ -85,13 +85,10 @@ public class EnergyProxy {
     }
 
     public boolean add(BlockPos pos) {
-        if (!this.cables.contains(pos)) {
-            return this.cables.add(pos);
-        }
-        return false;
+        return this.cables.add(pos);
     }
 
-    public List<BlockPos> cables() {
+    public HashSet<BlockPos> cables() {
         return this.cables;
     }
 }
