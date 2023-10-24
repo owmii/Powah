@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
 	"ggg",
-	"cdc",
-	"gfg"
+	"cfc",
+	"ggg"
   ],
   "key": {
 	"c": {
@@ -14,9 +14,6 @@
 	},
 	"f": {
 	  "item": "powah:furnator_blazing"
-	},
-	"d": {
-	  "item": "powah:dielectric_casing"
 	}
   },
   "result": {
