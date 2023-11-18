@@ -42,6 +42,7 @@ public class Blcks {
     public static final Block NIOTIC_CRYSTAL = REG.register("niotic_crystal_block", new AbstractBlock(Properties.metal(2.0f, 20.0f)));
     public static final Block SPIRITED_CRYSTAL = REG.register("spirited_crystal_block", new AbstractBlock(Properties.metal(2.0f, 20.0f)));
     public static final Block NITRO_CRYSTAL = REG.register("nitro_crystal_block", new AbstractBlock(Properties.metal(2.0f, 20.0f)));
+    public static final Block OVERCHARGED_CORE = REG.register("overcharged_core_block", new AbstractBlock(Properties.metal(2.0f, 20.0f)));
     public static final Block URANINITE = REG.register("uraninite_block", new AbstractBlock(Properties.metal(2.0f, 20.0f)));
     public static final Block URANINITE_ORE_POOR = REG.register("uraninite_ore_poor", new AbstractBlock(Properties.rock(3.0f, 8.0f)));
     public static final Block URANINITE_ORE = REG.register("uraninite_ore", new AbstractBlock(Properties.rock(3.2f, 8.0f)));
