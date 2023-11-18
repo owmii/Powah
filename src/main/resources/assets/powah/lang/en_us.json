@@ -55,10 +55,45 @@
     "item.powah.energized_chestplate_starter": "Energized Chestplate (Starter)",
     "item.powah.energized_helmet_starter": "Energized Helmet (Starter)",
 
-    "item.powah.energised_steel": "Energised Steel",
-    "item.powah.blazing_crystal": "Blazing Crystal",
-    "item.powah.niotic_crystal": "Niotic Crystal",
-    "item.powah.spirited_crystal": "Spirited Crystal",
+    "item.powah.energized_boots_basic": "Energized Boots (Basic)",
+    "item.powah.energized_leggings_basic": "Energized Leggings (Basic)",
+    "item.powah.energized_chestplate_basic": "Energized Chestplate (Basic)",
+    "item.powah.energized_helmet_basic": "Energized Helmet (Basic)",
+
+    "item.powah.energized_boots_hardened": "Energized Boots (Hardened)",
+    "item.powah.energized_leggings_hardened": "Energized Leggings (Hardened)",
+    "item.powah.energized_chestplate_hardened": "Energized Chestplate (Hardened)",
+    "item.powah.energized_helmet_hardened": "Energized Helmet (Hardened)",
+
+    "item.powah.energized_boots_blazing": "Energized Boots (Blazing)",
+    "item.powah.energized_leggings_blazing": "Energized Leggings (Blazing)",
+    "item.powah.energized_chestplate_blazing": "Energized Chestplate (Blazing)",
+    "item.powah.energized_helmet_blazing": "Energized Helmet (Blazing)",
+
+    "item.powah.energized_boots_niotic": "Energized Boots (Niotic)",
+    "item.powah.energized_leggings_niotic": "Energized Leggings (Niotic)",
+    "item.powah.energized_chestplate_niotic": "Energized Chestplate (Niotic)",
+    "item.powah.energized_helmet_niotic": "Energized Helmet (Niotic)",
+
+    "item.powah.energized_boots_spirited": "Energized Boots (Spirited)",
+    "item.powah.energized_leggings_spirited": "Energized Leggings (Spirited)",
+    "item.powah.energized_chestplate_spirited": "Energized Chestplate (Spirited)",
+    "item.powah.energized_helmet_spirited": "Energized Helmet (Spirited)",
+
+    "item.powah.energized_boots_nitro": "Energized Boots (Nitro)",
+    "item.powah.energized_leggings_nitro": "Energized Leggings (Nitro)",
+    "item.powah.energized_chestplate_nitro": "Energized Chestplate (Nitro)",
+    "item.powah.energized_helmet_nitro": "Energized Helmet (Nitro)",
+
+    "item.powah.energized_boots_overcharged": "Energized Boots (Overcharged)",
+    "item.powah.energized_leggings_overcharged": "Energized Leggings (Overcharged)",
+    "item.powah.energized_chestplate_overcharged": "Energized Chestplate (Overcharged)",
+    "item.powah.energized_helmet_overcharged": "Energized Helmet (Overcharged)",
+
+    "item.powah.steel_energized": "Energized Steel",
+    "item.powah.crystal_blazing": "Blazing Crystal",
+    "item.powah.crystal_niotic": "Niotic Crystal",
+    "item.powah.crystal_spirited": "Spirited Crystal",
     "item.powah.crystal_nitro": "Nitro Crystal",
     "item.powah.overcharged_core": "Overcharged Core",
 

@@ -46,4 +46,29 @@ public class Itms {
     public static final Item ENERGIZED_LEGGINGS_STARTER = REG.register("energized_leggings_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item ENERGIZED_CHESTPLATE_STARTER = REG.register("energized_chestplate_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
     public static final Item ENERGIZED_HELMET_STARTER = REG.register("energized_helmet_starter", new ArmorItem(ModArmorMaterial.ARMOR_STARTER, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_BASIC = REG.register("energized_boots_basic", new ArmorItem(ModArmorMaterial.ARMOR_BASIC, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_BASIC = REG.register("energized_leggings_basic", new ArmorItem(ModArmorMaterial.ARMOR_BASIC, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_BASIC = REG.register("energized_chestplate_basic", new ArmorItem(ModArmorMaterial.ARMOR_BASIC, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_BASIC = REG.register("energized_helmet_basic", new ArmorItem(ModArmorMaterial.ARMOR_BASIC, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_BLAZING = REG.register("energized_boots_blazing", new ArmorItem(ModArmorMaterial.ARMOR_BLAZING, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_BLAZING = REG.register("energized_leggings_blazing", new ArmorItem(ModArmorMaterial.ARMOR_BLAZING, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_BLAZING = REG.register("energized_chestplate_blazing", new ArmorItem(ModArmorMaterial.ARMOR_BLAZING, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_BLAZING = REG.register("energized_helmet_blazing", new ArmorItem(ModArmorMaterial.ARMOR_BLAZING, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_NIOTIC = REG.register("energized_boots_niotic", new ArmorItem(ModArmorMaterial.ARMOR_NIOTIC, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_NIOTIC = REG.register("energized_leggings_niotic", new ArmorItem(ModArmorMaterial.ARMOR_NIOTIC, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_NIOTIC = REG.register("energized_chestplate_niotic", new ArmorItem(ModArmorMaterial.ARMOR_NIOTIC, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_NIOTIC = REG.register("energized_helmet_niotic", new ArmorItem(ModArmorMaterial.ARMOR_NIOTIC, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_SPIRITED = REG.register("energized_boots_spirited", new ArmorItem(ModArmorMaterial.ARMOR_SPIRITED, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_SPIRITED = REG.register("energized_leggings_spirited", new ArmorItem(ModArmorMaterial.ARMOR_SPIRITED, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_SPIRITED = REG.register("energized_chestplate_spirited", new ArmorItem(ModArmorMaterial.ARMOR_SPIRITED, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_SPIRITED = REG.register("energized_helmet_spirited", new ArmorItem(ModArmorMaterial.ARMOR_SPIRITED, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_NITRO = REG.register("energized_boots_nitro", new ArmorItem(ModArmorMaterial.ARMOR_NITRO, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_NITRO = REG.register("energized_leggings_nitro", new ArmorItem(ModArmorMaterial.ARMOR_NITRO, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_NITRO = REG.register("energized_chestplate_nitro", new ArmorItem(ModArmorMaterial.ARMOR_NITRO, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_NITRO = REG.register("energized_helmet_nitro", new ArmorItem(ModArmorMaterial.ARMOR_NITRO, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_BOOTS_OVERCHARGED = REG.register("energized_boots_overcharged", new ArmorItem(ModArmorMaterial.ARMOR_OVERCHARGED, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_LEGGINGS_OVERCHARGED = REG.register("energized_leggings_overcharged", new ArmorItem(ModArmorMaterial.ARMOR_OVERCHARGED, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_CHESTPLATE_OVERCHARGED = REG.register("energized_chestplate_overcharged", new ArmorItem(ModArmorMaterial.ARMOR_OVERCHARGED, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroups.MAIN)));
+    public static final Item ENERGIZED_HELMET_OVERCHARGED = REG.register("energized_helmet_overcharged", new ArmorItem(ModArmorMaterial.ARMOR_OVERCHARGED, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroups.MAIN)));
 }
+
