@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "b": {
+      "item": "powah:capacitor_overcharged"
+    },
+    "i": {
+      "item": "powah:overcharged_core"
+    },
+    "c": {
+      "item": "powah:energized_helmet_nitro"
+    }
+  },
+  "result": {
+    "item": "powah:energized_helmet_overcharged"
+  }
+}

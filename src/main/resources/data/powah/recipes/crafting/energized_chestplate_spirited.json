@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "d d",
+    "hch",
+    "shs"
+  ],
+  "key": {
+    "d": {
+      "item": "powah:dielectric_paste"
+    },
+    "h": {
+      "item": "powah:capacitor_spirited"
+    },
+    "s": {
+      "item": "powah:crystal_spirited"
+    },
+    "c": {
+      "item": "powah:energized_chestplate_niotic"
+    }
+  },
+  "result": {
+    "item": "powah:energized_chestplate_spirited"
+  }
+}

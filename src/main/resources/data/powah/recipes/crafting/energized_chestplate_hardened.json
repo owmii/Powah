@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "d d",
+    "hch",
+    "shs"
+  ],
+  "key": {
+    "d": {
+      "item": "powah:dielectric_paste"
+    },
+    "h": {
+      "item": "powah:capacitor_hardened"
+    },
+    "s": {
+      "item": "powah:steel_energized"
+    },
+    "c": {
+      "item": "powah:energized_chestplate_basic"
+    }
+  },
+  "result": {
+    "item": "powah:energized_chestplate_hardened"
+  }
+}

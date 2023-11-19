@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "b": {
+      "item": "powah:capacitor_hardened"
+    },
+    "i": {
+      "item": "powah:steel_energized"
+    },
+    "c": {
+      "item": "powah:energized_helmet_basic"
+    }
+  },
+  "result": {
+    "item": "powah:energized_helmet_hardened"
+  }
+}

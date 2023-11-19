@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "d d",
+    "hch",
+    "shs"
+  ],
+  "key": {
+    "d": {
+      "item": "powah:dielectric_paste"
+    },
+    "h": {
+      "item": "powah:capacitor_overcharged"
+    },
+    "s": {
+      "item": "powah:overcharged_core"
+    },
+    "c": {
+      "item": "powah:energized_chestplate_nitro"
+    }
+  },
+  "result": {
+    "item": "powah:energized_chestplate_overcharged"
+  }
+}

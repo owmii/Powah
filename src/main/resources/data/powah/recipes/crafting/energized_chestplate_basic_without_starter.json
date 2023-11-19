@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "d d",
+      "bcb",
+      "ibi"
+    ],
+    "key": {
+      "d": {
+        "item": "powah:dielectric_paste"
+      },
+      "b": {
+        "item": "powah:capacitor_basic"
+      },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      },
+      "c": {
+        "item": "powah:dielectric_casing"
+      }
+    },
+    "result": {
+      "item": "powah:energized_chestplate_basic"
+    },
+  "conditions": [
+    {
+      "value": {"type": "powah:starter"},
+      "type": "forge:not"
+    }
+  ]
+}

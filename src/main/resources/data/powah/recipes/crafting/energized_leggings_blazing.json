@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dcd",
+    "b b",
+    "i i"
+  ],
+  "key": {
+    "d": {
+      "item": "powah:dielectric_paste"
+    },
+    "b": {
+      "item": "powah:capacitor_blazing"
+    },
+    "i": {
+      "item": "powah:crystal_blazing"
+    },
+    "c": {
+      "item": "powah:energized_leggings_hardened"
+    }
+  },
+  "result": {
+    "item": "powah:energized_leggings_blazing"
+  }
+}

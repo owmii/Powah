@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "dcd",
+    "b b",
+    "i i"
+  ],
+  "key": {
+    "d": {
+      "item": "powah:dielectric_paste"
+    },
+    "b": {
+      "item": "powah:capacitor_overcharged"
+    },
+    "i": {
+      "item": "powah:overcharged_core"
+    },
+    "c": {
+      "item": "powah:energized_leggings_nitro"
+    }
+  },
+  "result": {
+    "item": "powah:energized_leggings_overcharged"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "b": {
+      "item": "powah:capacitor_basic"
+    },
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "powah:dielectric_casing"
+    }
+  },
+  "result": {
+    "item": "powah:energized_helmet_basic"
+  },
+  "conditions": [
+    {
+      "value": {"type": "powah:starter"},
+      "type": "forge:not"
+    }
+  ]
+}

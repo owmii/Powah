@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "item": "powah:crystal_nitro"
+    },
+    "c": {
+      "item": "powah:energized_boots_spirited"
+    },
+    "b": {
+      "item": "powah:capacitor_nitro"
+    }
+  },
+  "result": {
+    "item": "powah:energized_boots_nitro"
+  }
+}

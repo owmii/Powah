@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "c": {
+      "item": "powah:dielectric_casing"
+    },
+    "b": {
+      "item": "powah:capacitor_basic_tiny"
+    }
+  },
+  "result": {
+    "item": "powah:energized_boots_starter"
+  },
+  "conditions": [
+    {
+      "values": [{"type": "powah:starter"}],
+      "type": "forge:and"
+    }
+  ]
+}

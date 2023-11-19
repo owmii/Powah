@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bcb",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "item": "powah:crystal_niotic"
+    },
+    "c": {
+      "item": "powah:energized_boots_blazing"
+    },
+    "b": {
+      "item": "powah:capacitor_niotic"
+    }
+  },
+  "result": {
+    "item": "powah:energized_boots_niotic"
+  }
+}
