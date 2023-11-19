@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "powah:energized_helmet_overcharged",
+        "powah:energized_chestplate_overcharged",
+        "powah:energized_leggings_overcharged",
+        "powah:energized_boots_overcharged"
+    ]
+}
