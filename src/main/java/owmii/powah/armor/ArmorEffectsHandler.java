@@ -11,8 +11,10 @@ import javax.annotation.Nullable;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.entity.ai.attributes.Attribute;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.Attributes;
+import net.minecraft.entity.ai.attributes.ModifiableAttributeInstance;
 import net.minecraft.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -41,7 +43,13 @@ public class ArmorEffectsHandler {
         HANDLERS.put("blazing", new ArmorEffect(player -> {getArmorData(player).putBoolean("hasJumpBoost", true);}, player -> {getArmorData(player).putBoolean("hasJumpBoost", false);}));
         HANDLERS.put("niotic", new ArmorEffect(player -> {getArmorData(player).putBoolean("hasWaterBreathing", true);}, player -> {getArmorData(player).putBoolean("hasWaterBreathing", false);}));
         HANDLERS.put("spirited", new ArmorEffect(player -> {getArmorData(player).putBoolean("hasNightVision", true);}, player -> {getArmorData(player).putBoolean("hasNightVision", false);}));
-        HANDLERS.put("nitro", new ArmorEffect(player -> {player.getAttribute(Attributes.MAX_HEALTH).applyNonPersistentModifier(armorHealthModifier);}, player -> {player.getAttribute(Attributes.MAX_HEALTH).removeModifier(armorHealthModifier);}));
+        HANDLERS.put("nitro", new ArmorEffect(player -> {
+            ModifiableAttributeInstance maxHealth = player.getAttribute(Attributes.MAX_HEALTH);
+            if (!maxHealth.hasModifier(armorHealthModifier)) maxHealth.applyNonPersistentModifier(armorHealthModifier);
+        }, player -> {
+            ModifiableAttributeInstance maxHealth = player.getAttribute(Attributes.MAX_HEALTH);
+            if (maxHealth.hasModifier(armorHealthModifier)) maxHealth.removeModifier(armorHealthModifier);
+        }));
         HANDLERS.put("overcharged", new ArmorEffect(player -> {player.abilities.allowFlying = true;}, player -> {player.abilities.allowFlying = false; player.abilities.isFlying = false;}));
     }
 
