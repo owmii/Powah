@@ -91,7 +91,12 @@
     "item.powah.energized_helmet_overcharged": "Energized Helmet (Overcharged)",
 
     "armor_effect.powah.starter": "Thunder damage immunity",
-    "armor_effect.powah.nitro": "Health boost V (10 extra hearts)",
+    "armor_effect.powah.basic": "Haste",
+    "armor_effect.powah.hardened": "Resistance",
+    "armor_effect.powah.blazing": "Jump boost",
+    "armor_effect.powah.niotic": "Water breathing",
+    "armor_effect.powah.spirited": "Night vision",
+    "armor_effect.powah.nitro": "Health boost",
     "armor_effect.powah.overcharged": "Creative flight",
 
     "item.powah.steel_energized": "Energized Steel",
@@ -154,7 +159,5 @@
     "chat.powah.no.binding": "This Card is already bound to %s!",
     "chat.powah.wrench.link.start": "Started linking ...",
     "chat.powah.wrench.link.done": "Linking done!",
-    "chat.powah.wrench.link.fail": "Out of range!!",
-
-    "tooltip.powah.armor_lightning_immunity": "Grants lightning bolt damange immunity when a full set of Powah armor is worn."
+    "chat.powah.wrench.link.fail": "Out of range!!"
 }

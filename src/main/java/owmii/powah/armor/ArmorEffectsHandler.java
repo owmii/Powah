@@ -27,11 +27,11 @@ public class ArmorEffectsHandler {
     private static LinkedHashMap<String, ArmorEffect> handlers = new LinkedHashMap<>();
     static {
         handlers.put("starter", new ArmorEffect(player -> {player.getPersistentData().putBoolean("isThunderImmune", true);}, player -> {player.getPersistentData().putBoolean("isThunderImmune", false);}));
-        handlers.put("basic", new ArmorEffect());
-        handlers.put("hardened", new ArmorEffect());
-        handlers.put("blazing", new ArmorEffect());
-        handlers.put("spirited", new ArmorEffect());
-        handlers.put("niotic", new ArmorEffect());
+        handlers.put("basic", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasHaste", true);}, player -> {player.getPersistentData().putBoolean("hasHaste", false);}));
+        handlers.put("hardened", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasResistance", true);}, player -> {player.getPersistentData().putBoolean("hasResistance", false);}));
+        handlers.put("blazing", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasJumpBoost", true);}, player -> {player.getPersistentData().putBoolean("hasJumpBoost", false);}));
+        handlers.put("niotic", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasWaterBreathing", true);}, player -> {player.getPersistentData().putBoolean("hasWaterBreathing", false);}));
+        handlers.put("spirited", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasNightVision", true);}, player -> {player.getPersistentData().putBoolean("hasNightVision", false);}));
         handlers.put("nitro", new ArmorEffect(player -> {player.getPersistentData().putBoolean("hasHealthBoost", true);}, player -> {player.getPersistentData().putBoolean("hasHealthBoost", false);}));
         handlers.put("overcharged", new ArmorEffect(player -> {player.abilities.allowFlying = true;}, player -> {player.abilities.allowFlying = false; player.abilities.isFlying = false;}));
 
