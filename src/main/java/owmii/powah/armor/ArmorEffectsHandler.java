@@ -34,7 +34,7 @@ import owmii.powah.Powah;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE, modid = Powah.MOD_ID)
 public class ArmorEffectsHandler {
-    private static AttributeModifier armorHealthModifier = new AttributeModifier(UUID.randomUUID(), "powahArmorHealthModifier", 10, Operation.ADDITION);
+    private static AttributeModifier armorHealthModifier = new AttributeModifier(UUID.randomUUID(), "powahArmorHealthModifier", 20, Operation.ADDITION);
     private static final LinkedHashMap<String, ArmorEffect> HANDLERS = new LinkedHashMap<>();
     static {
         HANDLERS.put("starter", new ArmorEffect(player -> {getArmorData(player).putBoolean("isThunderImmune", true);}, player -> {getArmorData(player).putBoolean("isThunderImmune", false);}));
