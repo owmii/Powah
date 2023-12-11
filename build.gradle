@@ -123,7 +123,7 @@ jar {
                 'FMLAT'                   : 'accesstransformer.cfg',
                 "TweakClass"              : "org.spongepowered.asm.launch.MixinTweaker",
                 "TweakOrder"              : 0,
-                "MixinConfigs"            : "modid.mixin.json",
+                "MixinConfigs"            : "powah.mixin.json",
                 "Specification-Title"     : mod_name,
                 "Specification-Vendor"    : "owmii",
                 "Specification-Version"   : mod_version,
