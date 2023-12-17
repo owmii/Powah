@@ -9,5 +9,6 @@
     "injectors": {
         "defaultRequire": 1
     },
-    "refmap": "powah.mixin-refmap.json"
+    "refmap": "powah.mixin-refmap.json",
+    "minVersion": "0.8"
 }
