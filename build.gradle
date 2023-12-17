@@ -109,7 +109,7 @@ dependencies {
     implementation fg.deobf("dev.latvian.mods:kubejs-forge:1605.3.19-build.229")
     implementation fg.deobf("dev.latvian.mods:rhino-forge:1605.1.5-build.75")
 
-    annotationProcessor 'org.spongepowered:mixin:0.8:processor'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 tasks.withType(Copy).all { duplicatesStrategy 'exclude' }
