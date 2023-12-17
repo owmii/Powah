@@ -14,7 +14,7 @@ import static owmii.powah.utils.GetTieredTranslatedName.getTieredTranslatedName;
 
 @Mixin(AbstractBlock.class)
 public class AbstractBlockMixin {
-    @Inject(at = @At(value = "HEAD"), method = "getDisplayName", cancellable = true)
+    @Inject(at = @At(value = "HEAD"), method = "getDisplayName", cancellable = true, remap = false)
     @SuppressWarnings("rawtypes")
     protected void onGetDisplayName(ItemStack stack, CallbackInfoReturnable<IFormattableTextComponent> cir) {
         AbstractBlock obj = (AbstractBlock)(Object)this;
